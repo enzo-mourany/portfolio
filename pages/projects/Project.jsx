@@ -1,6 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 
-export default function Post({ post }) {
+export default function Project() {
     return (
         <>
             <main>
@@ -9,16 +10,14 @@ export default function Post({ post }) {
                 </Link>
                 <h1>{post.title}</h1>
                 <p>{post.description}</p>
-
-
             </main>
         </>
     );
 }
 
 export async function getStaticProps({ params }) {
-    const post = await fetch(
-        `http://jsonplaceholder.typicode.com/posts/${params.id}`
+    const post = fetch(
+        `../api/projects.json${params.id}`
     ).then((r) => r.json());
     return {
         props: {
@@ -28,8 +27,8 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const post = await fetch(
-        'http://jsonplaceholder.typicode.com/posts?_limit=4'
+    const post = fetch(
+        '../api/projects.json'
     ).then((r) => r.json());
     return {
         paths: post.map((post) => ({
