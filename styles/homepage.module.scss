@@ -67,20 +67,9 @@
                 writing-mode: vertical-rl;
                 font-size: 12px;
                 opacity: 60%;
+                color: '#fff';
             }
         }
-    }
-    .explore::after {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 90px;
-        margin: 0px auto;
-        background-color: #fff;
-        opacity: 60%;
-    }
-    .left {
-        background-color: #fff;
     }
     .right {
         position: relative;
@@ -93,27 +82,25 @@
             height: 100%;
             h1 {
                 font-size: 90px;
-                font-family: CalibreSemiBold;
                 font-size: 80px;
                 font-weight: 200;
                 letter-spacing: 1px;
                 color: '#ccd6f6';
+                font-family: PP, helvetica, arial, sans-serif;
             }
             h2 {
+                color: '#fff';
                 font-weight: 800;
-                font-family: poppins, sans-serif;
-                font-size: 120px;
-                letter-spacing: 6px;
-                color: transparent;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+                font-size: 30px;
+                letter-spacing: 1px;
+                font-family: PP, helvetica, arial, sans-serif;
             }
             h3 {
                 font-size: 35px;
-                font-family: CalibreSemiBold;
                 font-weight: 400;
                 opacity: 70%;
                 color: '#ccd6f6';
+                font-family: PP, helvetica, arial, sans-serif;
             }
         }
         .buttons {

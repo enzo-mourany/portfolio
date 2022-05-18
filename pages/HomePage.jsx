@@ -77,15 +77,8 @@ export default function HomePage() {
                     </a>
                 </div>
             </div>
-
-            <div className={styles.explore}>
-                <div className={styles.text}>
-                    <p>EXPLORE</p>
-                </div>
-            </div>
-            <div className={styles.left}></div>
             <div className={styles.right}>
-                <div className='wrapper'>
+                <div className={styles.wrapper}>
                     <h2>Hi There, I'm</h2>
                     <h1>Enzo Mourany</h1>
                     <h3>French Frontend Developer</h3>

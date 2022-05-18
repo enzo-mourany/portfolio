@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-key */
-import Portfolio from "./portfolio/Portfolio";
-//import Link from 'next/link';
 import Head from 'next/head';
-
+import HomePage from './HomePage';
+import About from './About';
 
 export default function Home() {
   return (
@@ -11,11 +10,9 @@ export default function Home() {
         <title>Portfolio</title>
       </Head>
       <main>
-        <Portfolio />
+        <HomePage />
+        <About />
       </main>
-
     </>
   );
 }
-
-
