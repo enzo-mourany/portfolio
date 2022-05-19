@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
 .intro {
     display: flex;
     justify-content: center;
@@ -93,6 +94,10 @@
                 gap: 4px;
                 p {
                     color: #fff;
+                    span {
+                        font-family: 'Playfair Display', serif;
+                        font-style: italic;
+                    }
                 }
             }
         }

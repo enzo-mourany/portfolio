@@ -1,11 +1,32 @@
 .topbar {
+    display: flex;
+    flex-direction: row;
     .left {
         background: #fff;
+        width: 100%;
     }
     .middle {
         background: red;
+        width: 100%;
     }
     .right {
         background: green;
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: flex-end;
+            margin-right: 20px;
+            gap: 10px;
+            li {
+                a {
+                    color: #fff;
+                    font-family: PP, helvetica, arial, sans-serif;
+                    font-weight: 40;
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }

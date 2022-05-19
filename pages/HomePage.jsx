@@ -89,10 +89,7 @@ export default function HomePage() {
                         <h3>DEVELOPER</h3>
                     </div>
                     <div className={styles.welcome}>
-                        <p>WELCOME TO</p>
-                        <p>my</p>
-                        <p>2021</p>
-                        <p>portfolio</p>
+                        <p>WELCOME TO <span>my</span> 2021 <span>Portfolio</span></p>
                     </div>
 
                 </div>

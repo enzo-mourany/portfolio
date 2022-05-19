@@ -6,7 +6,7 @@ import HomePage from './HomePage';
 import About from './About';
 
 
-export default function Home({ posts }) {
+export default function Home() {
 
   return (
     <>
@@ -18,11 +18,6 @@ export default function Home({ posts }) {
         <div className="sections">
           <HomePage />
           <About />
-          <ul>
-            {posts.map(({ id, title }) => (
-              <li key={id}>{title}</li>
-            ))}
-          </ul>
         </div>
 
       </main>
@@ -30,13 +25,3 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getServerSideProps() {
-  const postsResponse = await fetch(process.env.BASE_URL + '/api/projects');
-  const postsData = await postsResponse.json();
-
-  return {
-    props: {
-      posts: postsData
-    }
-  }
-}
