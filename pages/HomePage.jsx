@@ -79,9 +79,22 @@ export default function HomePage() {
             </div>
             <div className={styles.right}>
                 <div className={styles.wrapper}>
-                    <h2>Hi There, I'm</h2>
-                    <h1>Enzo Mourany</h1>
-                    <h3>French Frontend Developer</h3>
+                    <div className={styles.presentation}>
+                        <p>Hi There, I'm a</p>
+                    </div>
+
+                    <div className={styles.title}>
+                        <h3>FRENCH FRONTEND</h3>
+                        <h3>WEB AND MOBILE</h3>
+                        <h3>DEVELOPER</h3>
+                    </div>
+                    <div className={styles.welcome}>
+                        <p>WELCOME TO</p>
+                        <p>my</p>
+                        <p>2021</p>
+                        <p>portfolio</p>
+                    </div>
+
                 </div>
             </div>
         </div>

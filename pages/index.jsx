@@ -1,7 +1,9 @@
 /* eslint-disable react/jsx-key */
 import Head from 'next/head';
+import Topbar from './Topbar';
 import HomePage from './HomePage';
 import About from './About';
+
 
 export default function Home() {
   return (
@@ -10,8 +12,12 @@ export default function Home() {
         <title>Portfolio</title>
       </Head>
       <main>
-        <HomePage />
-        <About />
+        <Topbar />
+        <div className="sections">
+          <HomePage />
+          <About />
+        </div>
+
       </main>
     </>
   );
