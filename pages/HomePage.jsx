@@ -5,23 +5,19 @@ import styles from '../styles/homepage.module.scss';
 export default function HomePage() {
     return (
         <div className={styles.intro} id='intro'>
-
-            <div className={styles.right}>
-                <div className={styles.wrapper}>
-                    <div className={styles.presentation}>
-                        <p>Hi There, I'm a</p>
-                    </div>
-
-                    <div className={styles.title}>
-                        <h3>FRENCH FRONTEND</h3>
-                        <h3>WEB AND MOBILE</h3>
-                        <h3>DEVELOPER</h3>
-                    </div>
-                    <div className={styles.welcome}>
-                        <p>WELCOME TO <span>my</span> 2021 <span>Portfolio</span></p>
-                    </div>
-
+            <div className={styles.wrapper}>
+                <div className={styles.presentation}>
+                    <p>Hi There, I'm a</p>
                 </div>
+                <div className={styles.title}>
+                    <h3>FRENCH FRONTEND</h3>
+                    <h3>WEB AND MOBILE</h3>
+                    <h3>DEVELOPER</h3>
+                </div>
+                <div className={styles.welcome}>
+                    <p>WELCOME TO <span>my</span> 2021 <span>Portfolio</span></p>
+                </div>
+
             </div>
         </div>
     );
