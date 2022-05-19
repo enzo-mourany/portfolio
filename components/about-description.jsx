@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function aboutDescription() {
+export default function AboutDescription() {
     return (
         <div>
-
+            Description
         </div>
     )
 }
