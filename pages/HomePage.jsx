@@ -19,7 +19,7 @@ export default function HomePage() {
                             fill='none'
                             width='20'
                             height='20'
-                            stroke='currentColor'
+                            stroke='white'
                             strokeWidth='2'
                             strokeLinecap='round'
                             strokeLinejoin='round'
@@ -45,7 +45,7 @@ export default function HomePage() {
                             fill='none'
                             width='20'
                             height='20'
-                            stroke='currentColor'
+                            stroke='white'
                             strokeWidth='2'
                             strokeLinecap='round'
                             strokeLinejoin='round'
@@ -82,20 +82,6 @@ export default function HomePage() {
                     <h2>Hi There, I'm</h2>
                     <h1>Enzo Mourany</h1>
                     <h3>French Frontend Developer</h3>
-                </div>
-
-                <div className={styles.buttons}>
-                    <div className={styles.learnMore}>
-                        <a className={styles.learnMoreBtn} href='#about'>
-                            Learn More
-                        </a>
-                    </div>
-
-                    <div className={styles.downloadPdf}>
-                        <a href='/CV.pdf' download='cv-enzo-mourany'>
-                            Download CV
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
