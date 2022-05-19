@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Topbar from './Topbar';
 import HomePage from './HomePage';
 import About from './About';
+import styles from '../styles/index.module.scss';
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <Topbar />
-        <div className="sections">
+        <div className={styles.sections}>
           <HomePage />
           <About />
         </div>
