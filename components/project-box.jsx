@@ -13,7 +13,7 @@ export default function ProjectBox({
 }) {
     return (
         <div>
-            <li className='item' whilehover={{ translateY: -10 }}>
+            <li className='item'>
                 <div className={styles.projectInner}>
                     <div className={styles.top}>
                         <div className={styles.projectTop}>

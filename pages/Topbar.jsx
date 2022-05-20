@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 import styles from '../styles/topbar.module.scss';
 
 export default function Topbar() {
     return (
         <div className={styles.topbar}>
             <div className={styles.left}>
-                <a href="#">Enzo Mourany</a>
+                <a href='#'>Enzo Mourany</a>
                 <div className={styles.icon}>
-
                     <a
                         href='https://www.linkedin.com/in/enzo-mourany-9b4a37228/'
                         target='_blank'
@@ -74,25 +74,25 @@ export default function Topbar() {
                             <path d='M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28' />
                         </svg>
                     </a>
-
                 </div>
             </div>
-            <div className={styles.middle}>
-
-            </div>
+            <div className={styles.middle}></div>
             <div className={styles.right}>
                 <ul>
+
                     <li>
-                        <a href="#">PROJECTS</a>
+                        <Link href={'/Projects'}>
+                            <a>PROJECTS</a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">ABOUT</a>
+                        <a>ABOUT</a>
                     </li>
                     <li>
-                        <a href="#">CONTACT</a>
+                        <a>CONTACT</a>
                     </li>
                 </ul>
             </div>
         </div>
-    )
+    );
 }

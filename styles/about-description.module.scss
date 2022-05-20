@@ -1,5 +1,28 @@
+@import '../styles/colors.scss';
 .aboutDescription {
-    p {
-        color: #fff;
+    .container {
+        .title {
+            color: #fff;
+            font-weight: 200;
+            span {
+                font-size: 12px;
+                color: $lightRed;
+            }
+        }
+        .text2 {
+            width: 400px;
+            p {
+                color: #fff;
+                font-weight: 200;
+                font-size: 13px;
+            }
+        }
+    }
+    .text {
+        width: 500px;
+        p {
+            color: #fff;
+            font-weight: 200;
+        }
     }
 }

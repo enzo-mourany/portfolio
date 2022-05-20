@@ -31,8 +31,8 @@ export default function Home({ data }) {
       <main>
         <Topbar />
         <div className={styles.sections}>
-          <HomePage />
-          <About />
+          <HomePage className="homePage" />
+          <About className="about" />
           {data.map(result => (
             <ProjectBox id={result.id} title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} />
           ))}
