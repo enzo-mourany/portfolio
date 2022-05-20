@@ -5,10 +5,9 @@ import Topbar from './Topbar';
 import HomePage from './HomePage';
 import About from './About';
 import styles from '../styles/index.module.scss';
-
+import Projects from './Projects';
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -20,9 +19,7 @@ export default function Home() {
           <HomePage />
           <About />
         </div>
-
       </main>
     </>
   );
 }
-

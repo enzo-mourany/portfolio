@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: PP, helvetica, arial, sans-serif;
     background-color: $grey;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
