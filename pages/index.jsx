@@ -33,9 +33,9 @@ export default function Home({ data }) {
           <HomePage />
           <About />
           {data.map(result => (
-            <h3 style={{ color: '#fff' }}>{result.title}</h3>
+            <ProjectBox title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} />
           ))}
-          <ProjectBox props={"test"} />
+
         </div>
       </main>
     </>
