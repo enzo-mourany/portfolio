@@ -34,11 +34,7 @@ export default function Home({ data }) {
           <HomePage />
           <About />
           {data.map(result => (
-            <><Link href={`/projects/${result.id}`}>
-              <a style={{ color: 'green' }}>
-                {result.title}
-              </a>
-            </Link><ProjectBox title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} /></>
+            <ProjectBox id={result.id} title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} />
           ))}
 
         </div>

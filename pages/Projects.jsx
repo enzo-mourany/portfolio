@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const defaultEndpoint = 'https://jsonplaceholder.typicode.com/users';
 
@@ -7,9 +8,9 @@ export async function getServerSideProps() {
     const data = await res.json();
     return {
         props: {
-            data
-        }
-    }
+            data,
+        },
+    };
 }
 
 export default function Projects({ data }) {
@@ -22,6 +23,5 @@ export default function Projects({ data }) {
                 </div>
             ))}
         </div>
-    )
+    );
 }
-
