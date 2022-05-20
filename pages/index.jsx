@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Topbar from './Topbar';
 import HomePage from './HomePage';
 import About from './About';
@@ -33,7 +34,11 @@ export default function Home({ data }) {
           <HomePage />
           <About />
           {data.map(result => (
-            <ProjectBox title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} />
+            <><Link href={`/projects/${result.id}`}>
+              <a style={{ color: 'green' }}>
+                {result.title}
+              </a>
+            </Link><ProjectBox title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} /></>
           ))}
 
         </div>
