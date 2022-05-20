@@ -9,7 +9,7 @@ import styles from '../styles/index.module.scss';
 import Projects from './Projects';
 import ProjectBox from '../components/project-box';
 
-const defaultEndpoint = 'https://enzo-mourany.github.io/projects-api/projects.json';
+const defaultEndpoint = 'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
 
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
