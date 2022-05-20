@@ -6,6 +6,7 @@ import HomePage from './HomePage';
 import About from './About';
 import styles from '../styles/index.module.scss';
 import Projects from './Projects';
+import ProjectBox from '../components/project-box';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <div className={styles.sections}>
           <HomePage />
           <About />
+          <ProjectBox />
         </div>
       </main>
     </>
