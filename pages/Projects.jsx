@@ -1,20 +1,24 @@
-import React from 'react'
+import React from 'react';
 
-export const getStaticProps = async () => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = res.json();
+const defaultEndpoint = 'https://jsonplaceholder.typicode.com/users';
 
+export async function getServerSideProps() {
+    const res = await fetch(defaultEndpoint);
+    const data = await res.json();
     return {
-        props: { projects: data }
+        props: {
+            data
+        }
     }
 }
 
-export default function Projects({ projects }) {
+export default function Projects({ data }) {
+    const { results = [] } = data;
     return (
         <div>
-            {projects.map(project => (
-                <div key={project.id}>
-                    <h3>{project.name}</h3>
+            {results.map((post) => (
+                <div key={post.id}>
+                    <h3>{post.name}</h3>
                 </div>
             ))}
         </div>

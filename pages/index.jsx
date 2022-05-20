@@ -8,7 +8,20 @@ import styles from '../styles/index.module.scss';
 import Projects from './Projects';
 import ProjectBox from '../components/project-box';
 
-export default function Home() {
+const defaultEndpoint = 'https://enzo-mourany.github.io/projects-api/projects.json';
+
+export async function getServerSideProps() {
+  const res = await fetch(defaultEndpoint);
+  const data = await res.json();
+  return {
+    props: {
+      data
+    }
+  }
+}
+
+
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -19,7 +32,10 @@ export default function Home() {
         <div className={styles.sections}>
           <HomePage />
           <About />
-          <ProjectBox />
+          {data.map(result => (
+            <h3 style={{ color: '#fff' }}>{result.title}</h3>
+          ))}
+          <ProjectBox props={"test"} />
         </div>
       </main>
     </>
