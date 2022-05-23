@@ -8,6 +8,7 @@ import About from './About';
 import styles from '../styles/index.module.scss';
 import Projects from './Projects';
 import ProjectBox from '../components/project-box';
+import Contact from './Contact';
 
 const defaultEndpoint = 'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
 
@@ -46,8 +47,7 @@ export default function Home({ data }) {
               ))}
             </div>
           </div>
-
-          <Projects />
+          <Contact />
 
         </div>
       </main>
