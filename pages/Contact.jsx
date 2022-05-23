@@ -12,7 +12,7 @@ export default function Contact() {
                     <h3>WANT TO DISCUSS A NEW PROJECT?</h3>
                 </div>
                 <div className={styles.mailButton}>
-                    <a href="#">Send me an e-mail</a>
+                    <a href="mailto:enzo.mourany@outlook.com">Send me an e-mail</a>
                 </div>
             </div>
             <div className={styles.footer}>
@@ -20,10 +20,10 @@ export default function Contact() {
                 <div className={styles.links}>
                     <ul>
                         <li>
-                            <a href="#">GITHUB</a>
+                            <a href="https://github.com/enzo-mourany/" target="_blank" rel="noreferrer">GITHUB</a>
                         </li>
                         <li>
-                            <a href="#">LINKEDIN</a>
+                            <a href="https://www.linkedin.com/in/enzo-mourany-9b4a37228/" target="_blank" rel="noreferrer">LINKEDIN</a>
                         </li>
                     </ul>
                 </div>
