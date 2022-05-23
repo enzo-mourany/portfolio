@@ -4,14 +4,24 @@ import styles from '../styles/about-description.module.scss';
 export default function AboutDescription() {
     return (
         <div className={styles.aboutDescription}>
-            <div className={styles.text}>
-                <p>
-                    I started frontend development because I like when websites
-                    or applications are pleasant to use and intuitive. I love
-                    designs that are out of the ordinary. My experience in
-                    drawing could help me in this area.
-                </p>
+            <div className={styles.container}>
+                <div className={styles.text}>
+                    <p>
+                        I started frontend development because I like when websites
+                        or applications are pleasant to use and intuitive. I love
+                        designs that are out of the ordinary. My experience in
+                        drawing could help me in this area.
+                    </p>
+                </div>
+                <div className={styles.text}>
+                    <p>
+                        I am working to become a fullstack JS developer as well as a
+                        blockchain developer. I would also like to be part of the
+                        Ethereum project
+                    </p>
+                </div>
             </div>
+
             <div className={styles.container}>
                 <div className={styles.item}>
                     <h3 className={styles.title}><span>01. </span>FRONTEND</h3>
@@ -55,14 +65,6 @@ export default function AboutDescription() {
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <div className={styles.text}>
-                <p>
-                    I am working to become a fullstack JS developer as well as a
-                    blockchain developer. I would also like to be part of the
-                    Ethereum project
-                </p>
             </div>
         </div>
     );
