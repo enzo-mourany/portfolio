@@ -76,7 +76,7 @@ export default function ProjectBox({
                             </div>
                         </div>
                         <Link href={`/projects/${id}`}>
-                            <a style={{ color: 'green' }}>
+                            <a>
                                 <h3 className={styles.projectTitle}>{title}</h3>
                             </a>
                         </Link>
