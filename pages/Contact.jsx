@@ -12,7 +12,7 @@ export default function Contact() {
                     <h3>WANT TO DISCUSS A NEW PROJECT?</h3>
                 </div>
                 <div className={styles.mailButton}>
-                    <p>Send me an e-mail</p>
+                    <a href="#">Send me an e-mail</a>
                 </div>
             </div>
             <div className={styles.footer}>
