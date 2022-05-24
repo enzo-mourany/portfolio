@@ -1,5 +1,6 @@
 import styles from '../../styles/selectedProject.module.scss';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Post({ post }) {
     console.log(post)
@@ -26,7 +27,18 @@ export default function Post({ post }) {
                         </ul>
                     </div>
                     <div className={styles.right}>
-                        <img src={post.img} />
+                        <ul className={styles.images}>
+                            {post.img.map((t) => (
+                                <li key={t.id} className={styles.img} ><Image
+                                    src={t}
+                                    alt="Project Img"
+                                    width={500}
+                                    height={500}
+                                /></li>
+
+                            ))}
+                        </ul>
+
                     </div>
                 </div>
 
