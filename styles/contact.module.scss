@@ -1,5 +1,9 @@
 @import './colors.scss';
 .contact {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
     .header {
         display: flex;
         flex-direction: column;
@@ -58,9 +62,7 @@
     .footer {
         display: flex;
         flex-direction: column;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 100px;
+        margin: 30px;
         p {
             color: #fff;
             font-weight: 400;

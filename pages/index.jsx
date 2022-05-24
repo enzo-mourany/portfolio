@@ -10,17 +10,17 @@ import Projects from './Projects';
 import ProjectBox from '../components/project-box';
 import Contact from './Contact';
 
-
-const defaultEndpoint = 'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
+const defaultEndpoint =
+  'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
 
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
   const data = await res.json();
   return {
     props: {
-      data
-    }
-  }
+      data,
+    },
+  };
 }
 
 const breakPoints = [
@@ -31,7 +31,6 @@ const breakPoints = [
 ];
 
 export default function Home({ data }) {
-
   return (
     <>
       <Head>
@@ -41,12 +40,19 @@ export default function Home({ data }) {
         <Topbar />
         <div className={styles.container}>
           <div className={styles.horizontalBloc}>
-            <HomePage className="homePage" />
-            <About className="about" />
+            <HomePage className='homePage' />
+            <About className='about' />
             <div className={styles.outerWrapper}>
               <div className={styles.wrapper}>
-                {data.map(result => (
-                  <ProjectBox id={result.id} title={result.title} description={result.description} githublink={result.githublink} tech={result.tech} />
+                {data.map((result) => (
+                  <ProjectBox
+                    className={styles.projectBox}
+                    id={result.id}
+                    title={result.title}
+                    description={result.description}
+                    githublink={result.githublink}
+                    tech={result.tech}
+                  />
                 ))}
               </div>
             </div>

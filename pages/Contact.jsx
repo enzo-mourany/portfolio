@@ -41,11 +41,12 @@ export default function Contact() {
                         <span>T</span>
                         <span> </span>
                         <span>?</span>
-
                     </h3>
                 </div>
                 <div className={styles.mailButton}>
-                    <a href="mailto:enzo.mourany@outlook.com">Send me an e-mail</a>
+                    <a href='mailto:enzo.mourany@outlook.com'>
+                        Send me an e-mail
+                    </a>
                 </div>
             </div>
             <div className={styles.footer}>
@@ -53,17 +54,36 @@ export default function Contact() {
                 <div className={styles.links}>
                     <ul>
                         <li>
-                            <a href="https://github.com/enzo-mourany/" target="_blank" rel="noreferrer">GITHUB</a>
+                            <a
+                                href='https://github.com/enzo-mourany/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                GITHUB
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/enzo-mourany-9b4a37228/" target="_blank" rel="noreferrer">LINKEDIN</a>
+                            <a
+                                href='https://www.linkedin.com/in/enzo-mourany-9b4a37228/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                LINKEDIN
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href='../public/CV.pdf'
+                                download
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                RESUME
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-
-
         </div>
     );
 }
