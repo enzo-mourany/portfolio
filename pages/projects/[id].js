@@ -1,18 +1,30 @@
 import styles from '../../styles/selectedProject.module.scss';
+import Link from 'next/link';
 
 export default function Post({ post }) {
     console.log(post)
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.left}>
-                    <h1 style={{ color: 'white' }}>{post.title}</h1>
-                    <p style={{ color: 'white' }}>{post.description}</p>
-                    <p style={{ color: 'white' }}>{post.delivered}</p>
+                <div className={styles.topbar}>
+                    <div className={styles.backMenu}>
+                        <Link href={'/'}>
+                            <a>Back</a>
+                        </Link>
+                    </div>
                 </div>
-                <div className={styles.right}>
-                    <img src={post.img} />
+                <div className={styles.wrapper}>
+                    <div className={styles.left}>
+                        <h1 className={styles.title}>{post.title}</h1>
+                        <p className={styles.description}>{post.description}</p>
+                        <p className={styles.delivered}>{post.delivered}</p>
+                        <p className={styles.retex}>{post.retex}</p>
+                    </div>
+                    <div className={styles.right}>
+                        <img src={post.img} />
+                    </div>
                 </div>
+
 
 
             </div>
