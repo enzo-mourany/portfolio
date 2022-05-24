@@ -5,9 +5,16 @@ export default function Post({ post }) {
     return (
         <>
             <div className={styles.container}>
+                <div className={styles.left}>
+                    <h1 style={{ color: 'white' }}>{post.title}</h1>
+                    <p style={{ color: 'white' }}>{post.description}</p>
+                    <p style={{ color: 'white' }}>{post.delivered}</p>
+                </div>
+                <div className={styles.right}>
+                    <img src={post.img} />
+                </div>
 
-                <h1 style={{ color: 'white' }}>{post.title}</h1>
-                <p style={{ color: 'white' }}>{post.description}</p>
+
             </div>
         </>
     )
