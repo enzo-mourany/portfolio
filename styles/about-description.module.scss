@@ -25,6 +25,11 @@
                 color: #fff;
                 font-weight: 200;
                 font-size: 13px;
+                word-spacing: 3px;
+                line-height: 16px;
+                span {
+                    color: $lightRed;
+                }
             }
         }
     }
