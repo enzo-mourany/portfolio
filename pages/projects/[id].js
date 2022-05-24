@@ -1,11 +1,14 @@
+import styles from '../../styles/selectedProject.module.scss';
+
 export default function Post({ post }) {
     console.log(post)
     return (
         <>
-            <main>
+            <div className={styles.container}>
+
                 <h1 style={{ color: 'white' }}>{post.title}</h1>
                 <p style={{ color: 'white' }}>{post.description}</p>
-            </main>
+            </div>
         </>
     )
 }
