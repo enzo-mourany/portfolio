@@ -1,40 +1,68 @@
 .container {
     display: flex;
-    flex-direction: row;
-    .left {
+    flex-direction: column;
+    .topbar {
+        display: flex;
+        justify-content: flex-start;
         margin: 40px;
-        width: 50%;
-        .title {
-            color: #fff;
-            font-size: 100px;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        .title::after {
-            content: '';
-            width: 100%;
-            color: #fff;
-            display: inline-block;
-            border-bottom: 3px solid #fff;
-        }
-        .description {
-            color: #fff;
-            font-size: 20px;
-            font-weight: 200;
-        }
-        .delivered {
-            color: #fff;
-            font-size: 30px;
-            font-weight: 200;
-        }
-        .retex {
-            color: #fff;
-            font-size: 30px;
-            font-weight: 200;
+        .backMenu {
+            a {
+                color: #fff;
+                font-size: 20px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
         }
     }
-    .right {
-        width: 50%;
-        margin: 40px;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        .left {
+            margin: 40px;
+            width: 50%;
+            .title {
+                color: #fff;
+                font-size: 100px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            .title::after {
+                content: '';
+                width: 100%;
+                color: #fff;
+                display: inline-block;
+                border-bottom: 3px solid #fff;
+            }
+            .description {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 200;
+            }
+            .delivered {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 200;
+            }
+            .retex {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 200;
+            }
+            .techList {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                padding: 0;
+                gap: 20px;
+                .tech {
+                    color: #fff;
+                }
+            }
+        }
+        .right {
+            width: 50%;
+            margin: 40px;
+        }
     }
 }

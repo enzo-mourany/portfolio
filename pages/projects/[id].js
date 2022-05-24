@@ -19,6 +19,11 @@ export default function Post({ post }) {
                         <p className={styles.description}>{post.description}</p>
                         <p className={styles.delivered}>{post.delivered}</p>
                         <p className={styles.retex}>{post.retex}</p>
+                        <ul className={styles.techList}>
+                            {post.tech.map((t) => (
+                                <li key={t.id} className={styles.tech} >{t}</li>
+                            ))}
+                        </ul>
                     </div>
                     <div className={styles.right}>
                         <img src={post.img} />
