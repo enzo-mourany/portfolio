@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image'
 
 export default function Post({ post }) {
-    console.log(post)
     return (
         <>
             <div className={styles.container}>
@@ -27,18 +26,12 @@ export default function Post({ post }) {
                         </ul>
                     </div>
                     <div className={styles.right}>
-                        <ul className={styles.images}>
-                            {post.img.map((t) => (
-                                <li key={t.id} className={styles.img} ><Image
-                                    src={t}
-                                    alt="Project Img"
-                                    width={500}
-                                    height={500}
-                                /></li>
-
-                            ))}
-                        </ul>
-
+                        <Image
+                            src={`https://github.com/enzo-mourany/projects-api/blob/gh-pages/IMG/${post.img}`}
+                            alt="Project Img"
+                            width={500}
+                            height={500}
+                        />
                     </div>
                 </div>
 
