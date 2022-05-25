@@ -26,12 +26,7 @@ export default function Post({ post }) {
                         </ul>
                     </div>
                     <div className={styles.right}>
-                        <Image
-                            src={`https://github.com/enzo-mourany/projects-api/blob/gh-pages/IMG/${post.img}`}
-                            alt="Project Img"
-                            width={500}
-                            height={500}
-                        />
+
                     </div>
                 </div>
 
@@ -45,7 +40,6 @@ export default function Post({ post }) {
 export async function getStaticProps({ params }) {
     const posts = await fetch(`https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json`).then(r => r.json());
     const post = posts.find(p => p.id === parseInt(params.id))
-    console.log(post)
     return {
         props: {
             post

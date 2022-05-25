@@ -1,3 +1,4 @@
+@import '../styles/responsive.module.scss';
 .aboutIntro {
     text-align: center;
     margin-bottom: 100px;
@@ -9,6 +10,9 @@
         line-height: 0.9;
         margin: 0;
         padding: 0;
+        @include tablet {
+            font-size: 35px;
+        }
         span {
             font-family: 'Playfair Display', serif;
             font-style: italic;
