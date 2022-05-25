@@ -10,6 +10,7 @@ export default function ProjectBox({
     description,
     githublink,
     tech,
+    date
 }) {
     return (
         <div>
@@ -22,6 +23,10 @@ export default function ProjectBox({
                             </a>
                         </Link>
                     </div>
+                    <div className={styles.date}>
+                        <p>{date}</p>
+                    </div>
+
                 </div>
             </li>
         </div>
