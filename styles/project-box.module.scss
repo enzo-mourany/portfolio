@@ -5,6 +5,7 @@
     align-items: flex-end;
     flex-direction: row;
     height: 20px;
+    width: fit-content;
     padding: 2rem 1.75rem;
     border-radius: 5px;
     margin-left: 10px;
@@ -24,7 +25,7 @@
                 text-transform: uppercase;
                 font-size: 54px;
                 font-weight: 10;
-                transition: all 0.3s ease;
+                transition: all 0.2s ease;
             }
         }
     }
@@ -33,6 +34,22 @@
             color: #fff;
             font-size: 13px;
             font-weight: 800;
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+.projectInner:hover {
+    .top {
+        a {
+            .projectTitle {
+                opacity: 50%;
+            }
+        }
+    }
+    .date {
+        p {
+            opacity: 50%;
         }
     }
 }
