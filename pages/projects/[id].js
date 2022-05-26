@@ -16,6 +16,7 @@ export default function Post({ post }) {
                 <div className={styles.wrapper}>
                     <div className={styles.left}>
                         <h1 className={styles.title}>{post.title}</h1>
+                        <a className={styles.github} href={post.githubLink}>View code</a>
                         <p className={styles.description}>{post.description}</p>
                         <p className={styles.delivered}>{post.delivered}</p>
                         <p className={styles.retex}>{post.retex}</p>

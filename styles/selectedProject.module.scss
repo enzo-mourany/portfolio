@@ -52,6 +52,14 @@
                 display: inline-block;
                 border-bottom: 3px solid #fff;
             }
+            .github {
+                color: $lightRed;
+                font-size: 15px;
+                font-weight: 200;
+            }
+            .github:hover {
+                text-decoration: underline;
+            }
             .description {
                 color: #fff;
                 font-size: 15px;
@@ -92,7 +100,8 @@
                 gap: 20px;
                 .tech {
                     font-weight: 600;
-                    color: $lightRed;
+                    color: #fff;
+                    letter-spacing: 0.8px;
                 }
             }
         }
@@ -101,7 +110,7 @@
             margin: 40px;
             background: #fff;
             @include tablet {
-                width: 100%;
+                width: 90%;
             }
         }
     }
