@@ -5,24 +5,6 @@ export default function AboutDescription() {
     return (
         <div className={styles.aboutDescription}>
             <div className={styles.container}>
-                <div className={styles.text}>
-                    <p>
-                        I started frontend development because I like when
-                        websites or applications are pleasant to use and
-                        intuitive. I love designs that are out of the ordinary. My
-                        experience in drawing could help me in this area.
-                    </p>
-                </div>
-                <div className={styles.text}>
-                    <p>
-                        I am working to become a fullstack JS developer as well as
-                        a blockchain developer. I would also like to be part of
-                        the Ethereum project
-                    </p>
-                </div>
-            </div>
-
-            <div className={styles.container}>
                 <div className={styles.item}>
                     <h3 className={styles.title}>
                         <span>01. </span>FRONTEND
@@ -35,7 +17,8 @@ export default function AboutDescription() {
                             creating and working on projects, I learned{' '}
                             <span>React</span> and <span>React Native</span>, then{' '}
                             <span>SASS</span> which I liked much more than CSS.
-                            Finally I started to work a lot with <span>NextJS </span>
+                            Finally I started to work a lot with{' '}
+                            <span>NextJS </span>
                             to work on bigger projects. I also use some libraries
                             like
                             <span> Three.JS</span> or <span>Parallax.JS</span>.
@@ -50,11 +33,13 @@ export default function AboutDescription() {
                     <div className={styles.text2}>
                         <p alt='backend'>
                             I started backend development in my studies even though
-                            I already had some basics in python. I learned <span>Java</span>, <span> SQL</span>
-                            and <span>C#</span> with which I did some projects. To work on
-                            fullstack projects, I learned to use <span>NodeJS</span>, <span>Express</span> and
-                            <span> MongoDB</span> in particular to create REST APIs and to make
-                            online chat systems.
+                            I already had some basics in python. I learned{' '}
+                            <span>Java</span>, <span> SQL</span>
+                            and <span>C#</span> with which I did some projects. To
+                            work on fullstack projects, I learned to use{' '}
+                            <span>NodeJS</span>, <span>Express</span> and
+                            <span> MongoDB</span> in particular to create REST APIs
+                            and to make online chat systems.
                         </p>
                     </div>
                 </div>

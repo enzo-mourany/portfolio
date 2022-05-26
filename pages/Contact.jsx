@@ -73,10 +73,11 @@ export default function Contact() {
                         </li>
                         <li>
                             <a
-                                href='../public/CV.pdf'
+                                href='/files/CV.pdf'
+                                alt='download resume'
                                 download
                                 target='_blank'
-                                rel='noreferrer'
+                                rel='noopener noreferrer'
                             >
                                 RESUME
                             </a>
