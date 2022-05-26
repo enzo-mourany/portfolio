@@ -1,3 +1,5 @@
+@import './responsive.module.scss';
+@import './colors.scss';
 .container {
     display: flex;
     flex-direction: column;
@@ -19,14 +21,29 @@
     .wrapper {
         display: flex;
         flex-direction: row;
+        @include tablet {
+            flex-direction: column;
+        }
         .left {
             margin: 40px;
             width: 50%;
+            @include tablet {
+                width: 90%;
+            }
+            @include phoneL {
+                width: 80%;
+            }
             .title {
                 color: #fff;
                 font-size: 70px;
                 font-weight: 200;
                 text-transform: uppercase;
+                @include phoneL {
+                    font-size: 40px;
+                }
+                @include mobile {
+                    font-size: 30px;
+                }
             }
             .title::after {
                 content: '';
@@ -39,18 +56,33 @@
                 color: #fff;
                 font-size: 15px;
                 font-weight: 200;
+                @include mobile {
+                    font-size: 12px;
+                }
             }
             .delivered {
                 color: #fff;
                 font-size: 22px;
                 font-weight: 200;
                 letter-spacing: 1px;
+                @include phoneL {
+                    font-size: 15px;
+                }
+                @include mobile {
+                    font-size: 12px;
+                }
             }
             .retex {
                 color: #fff;
                 font-size: 22px;
                 font-weight: 200;
                 letter-spacing: 1px;
+                @include phoneL {
+                    font-size: 15px;
+                }
+                @include mobile {
+                    font-size: 12px;
+                }
             }
             .techList {
                 display: flex;
@@ -59,14 +91,18 @@
                 padding: 0;
                 gap: 20px;
                 .tech {
-                    color: #fff;
                     font-weight: 600;
+                    color: $lightRed;
                 }
             }
         }
         .right {
             width: 50%;
             margin: 40px;
+            background: #fff;
+            @include tablet {
+                width: 100%;
+            }
         }
     }
 }

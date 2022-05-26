@@ -10,6 +10,7 @@ import Projects from './Projects';
 import ProjectBox from '../components/project-box';
 import Contact from './Contact';
 
+
 const defaultEndpoint =
   'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
 

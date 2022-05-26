@@ -13,7 +13,7 @@
     -webkit-box-pack: justify;
     -webkit-box-align: center;
     -webkit-font-smoothing: antialiased;
-    @include mobile {
+    @include phoneL {
         height: 4px;
         padding: 1.4rem 1.75rem;
     }
@@ -31,6 +31,9 @@
                 font-size: 54px;
                 font-weight: 10;
                 transition: all 0.2s ease;
+                @include phoneL {
+                    font-size: 34px;
+                }
                 @include mobile {
                     font-size: 24px;
                 }
