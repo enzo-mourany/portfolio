@@ -32,6 +32,9 @@
         }
         .text2 {
             width: 400px;
+            @include mobile {
+                width: 250px;
+            }
             p {
                 color: #fff;
                 font-weight: 200;
