@@ -11,9 +11,8 @@ export default function Topbar() {
             <div className={styles.middle}></div>
             <div className={styles.right}>
                 <ul>
-
                     <li>
-                        <Link href={'./Projects.jsx'}>
+                        <Link href="/Projects">
                             <a>PROJECTS</a>
                         </Link>
                     </li>
