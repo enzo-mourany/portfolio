@@ -5,11 +5,10 @@
     display: flex;
     //justify-content: center;
     align-items: flex-end;
-    flex-direction: row;
-    height: 20px;
-    width: 50%;
+    flex-direction: column;
+    height: auto;
     padding: 2rem 1.75rem;
-    margin-left: 10px;
+    //margin-left: 10px;
     -webkit-box-pack: justify;
     -webkit-box-align: center;
     -webkit-font-smoothing: antialiased;
@@ -28,7 +27,7 @@
                 margin: 0px 0px 0px;
                 color: red;
                 text-transform: uppercase;
-                font-size: 54px;
+                font-size: 34px;
                 font-weight: 10;
                 transition: all 0.2s ease;
                 @include phoneL {
