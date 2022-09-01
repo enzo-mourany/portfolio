@@ -3,4 +3,9 @@
     .wrapper {
         list-style-type: none;
     }
+    .wrapper2 {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }

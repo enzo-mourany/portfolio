@@ -23,6 +23,9 @@ export default function ProjectCard({
                             </a>
                         </Link>
                     </div>
+                    <div className={styles.description}>
+                        <p>{description}</p>
+                    </div>
                     <div className={styles.date}>
                         <p>{date}</p>
                     </div>

@@ -58,7 +58,7 @@ export default function Home({ data }) {
                   />
                 ))}
               </div>
-              <div className={styles.wrapper}>
+              <div className={styles.wrapper2}>
                 {data.map((result) => (
                   <ProjectCard
                     className={styles.projectBox}

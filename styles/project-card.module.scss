@@ -1,14 +1,14 @@
 @import './colors.scss';
 @import './responsive.module.scss';
 .projectInner {
+    background-color: green;
     display: flex;
     //justify-content: center;
     align-items: flex-end;
     flex-direction: row;
     height: 20px;
-    width: fit-content;
+    width: 50%;
     padding: 2rem 1.75rem;
-    border-radius: 5px;
     margin-left: 10px;
     -webkit-box-pack: justify;
     -webkit-box-align: center;
