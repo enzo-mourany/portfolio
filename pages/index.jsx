@@ -58,19 +58,7 @@ export default function Home({ data }) {
                   />
                 ))}
               </div>
-              <div className={styles.wrapper2}>
-                {data.map((result) => (
-                  <ProjectCard
-                    className={styles.projectBox}
-                    id={result.id}
-                    title={result.title}
-                    description={result.description}
-                    githublink={result.githublink}
-                    tech={result.tech}
-                    date={result.date}
-                  />
-                ))}
-              </div>
+
             </div>
             <Contact />
           </div>
