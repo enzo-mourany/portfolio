@@ -17,10 +17,13 @@ export default function Topbar() {
                         </Link>
                     </li>
                     <li>
-                        <a>ABOUT</a>
+                        <Link href="/About">
+
+                            <a>ABOUT</a>
+                        </Link>
                     </li>
                     <li>
-                        <a>CONTACT</a>
+                        <a href="https://google.com">CONTACT</a>
                     </li>
                 </ul>
             </div>

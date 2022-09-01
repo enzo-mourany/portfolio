@@ -3,7 +3,6 @@
     flex-direction: row;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid #fff;
     background-color: #111111;
     .left {
         display: flex;
@@ -58,10 +57,4 @@
             }
         }
     }
-}
-
-.topbar::after {
-    background-color: red;
-    width: 100%;
-    height: 3px;
 }
