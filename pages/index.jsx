@@ -9,6 +9,7 @@ import styles from '../styles/index.module.scss';
 import Projects from './Projects';
 import ProjectBox from '../components/project-box';
 import Contact from './Contact';
+import ProjectCard from '../components/project-card';
 
 
 const defaultEndpoint =
@@ -47,6 +48,19 @@ export default function Home({ data }) {
               <div className={styles.wrapper}>
                 {data.map((result) => (
                   <ProjectBox
+                    className={styles.projectBox}
+                    id={result.id}
+                    title={result.title}
+                    description={result.description}
+                    githublink={result.githublink}
+                    tech={result.tech}
+                    date={result.date}
+                  />
+                ))}
+              </div>
+              <div className={styles.wrapper}>
+                {data.map((result) => (
+                  <ProjectCard
                     className={styles.projectBox}
                     id={result.id}
                     title={result.title}

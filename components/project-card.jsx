@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import styles from '../styles/project-box.module.scss';
+import styles from '../styles/project-card.module.scss';
 import Link from 'next/link';
 
-export default function ProjectBox({
+export default function ProjectCard({
     id,
     title,
     description,
