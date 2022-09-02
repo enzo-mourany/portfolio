@@ -11,9 +11,13 @@
     -webkit-box-pack: justify;
     -webkit-box-align: center;
     -webkit-font-smoothing: antialiased;
-    @include phoneL {
+    @include miniTablet {
+        height: 8px;
+        padding: 1.5rem 1.75rem;
+    }
+    @include mobile {
         height: 4px;
-        padding: 1.4rem 1.75rem;
+        padding: 1.2rem 1.75rem;
     }
     .top {
         display: block;
