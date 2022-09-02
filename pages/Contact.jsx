@@ -52,6 +52,9 @@ export default function Contact({
                     </a>
                 </div>
             </div>
+            <div>
+                <p>close</p>
+            </div>
             <div className={styles.footer}>
                 <p>THANKS FOR YOUR VISIT!</p>
                 <div className={styles.links}>

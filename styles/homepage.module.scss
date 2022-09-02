@@ -22,22 +22,13 @@
         .title {
             text-align: center;
             h3 {
-                font-size: 85px;
+                font-size: 8vw;
                 font-weight: 400;
                 color: #fff;
                 font-family: PP, helvetica, arial, sans-serif;
                 line-height: 0.9;
                 margin: 0;
                 padding: 0;
-                @include tablet {
-                    font-size: 65px;
-                }
-                @include miniTablet {
-                    font-size: 40px;
-                }
-                @include mobile {
-                    font-size: 30px;
-                }
             }
         }
         .welcome {
