@@ -60,9 +60,9 @@ export default function Home({ data }) {
               </div>
 
             </div>
-            <Contact />
           </div>
         </div>
+        <Contact className={styles.contact} />
       </main>
     </>
   );

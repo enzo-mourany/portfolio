@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from '../styles/contact.module.scss';
 
-export default function Contact() {
+export default function Contact({
+    contactPageOpen,
+    setContactPageOpen,
+}) {
     return (
-        <div className={styles.contact}>
+        <div className={styles.contact + " " + (contactPageOpen && "active")}>
             <div className={styles.header}>
                 <div className={styles.title}>
                     <h2>GET IN TOUCH</h2>
