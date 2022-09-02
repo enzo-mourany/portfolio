@@ -33,13 +33,15 @@ const breakPoints = [
 ];
 
 export default function Home({ data }) {
+
+  const [contactPageOpen, setContactPageOpen] = useState(false);
   return (
     <>
       <Head>
         <title>Portfolio</title>
       </Head>
       <main>
-        <Topbar />
+        <Topbar contactPageOpen={contactPageOpen} setContactPageOpen={setContactPageOpen} />
         <div className={styles.container}>
           <div className={styles.horizontalBloc}>
             <HomePage className='homePage' />
@@ -62,7 +64,7 @@ export default function Home({ data }) {
             </div>
           </div>
         </div>
-        <Contact className={styles.contact} />
+        <Contact contactPageOpen={contactPageOpen} setContactPageOpen={setContactPageOpen} />
       </main>
     </>
   );

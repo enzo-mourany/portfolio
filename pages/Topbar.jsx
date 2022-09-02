@@ -2,7 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/topbar.module.scss';
 
-export default function Topbar() {
+export default function Topbar({
+    contactPageOpen,
+    setContactPageOpen,
+}) {
     return (
         <div className={styles.topbar}>
             <div className={styles.left}>
@@ -12,18 +15,19 @@ export default function Topbar() {
             <div className={styles.right}>
                 <ul>
                     <li>
-                        <Link href="/Projects">
+                        <Link href='/Projects'>
                             <a>PROJECTS</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/About">
-
+                        <Link href='/About'>
                             <a>ABOUT</a>
                         </Link>
                     </li>
                     <li>
-                        <a href="https://google.com">CONTACT</a>
+                        <div className={styles.contactLink} onClick={() => setContactPageOpen(!contactPageOpen)}>
+                            <a>CONTACT</a>
+                        </div>
                     </li>
                 </ul>
             </div>
