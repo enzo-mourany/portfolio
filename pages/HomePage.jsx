@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import styles from '../styles/homepage.module.scss';
+import { HiArrowDown } from 'react-icons/hi';
 
 
 export default function HomePage() {
@@ -20,7 +21,10 @@ export default function HomePage() {
             </div>
             <div className={styles.scroll}>
                 <div className={styles.box}>
-                    <p>Scroll down</p>
+                    <div className={styles.content}>
+                        <p>Scroll to discover</p>
+                        <HiArrowDown style={{color: '#fff'}} />
+                    </div>
                 </div>
             </div>
         </div>

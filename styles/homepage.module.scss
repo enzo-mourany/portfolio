@@ -51,12 +51,25 @@
     }
     .scroll {
         .box {
+            display: flex;
+            flex-direction: row;
             border: 1px solid #fff;
             border-radius: 30px;
-            p {
-                color: #fff;
-                margin: 13px 50px;
+            padding: 1px 20px;
+            .content {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                p {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: lighter;
+                    font-size: 14px;
+                }
             }
+
         }
     }
 }
