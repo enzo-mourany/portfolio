@@ -20,7 +20,7 @@ export default function Topbar({
                         </Link>
                     </li>
                     <li>
-                        <Link href='/About'>
+                        <Link href='/AboutPage'>
                             <a>ABOUT</a>
                         </Link>
                     </li>
