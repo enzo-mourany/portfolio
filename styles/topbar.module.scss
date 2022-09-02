@@ -17,22 +17,6 @@
             font-weight: 300;
             margin-left: 30px;
         }
-        .icon {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            margin-left: 60px;
-            a {
-                svg {
-                    transition: all 0.2s ease;
-                }
-            }
-            a:hover {
-                svg {
-                    transform: translateY(-2px);
-                }
-            }
-        }
     }
     .middle {
         display: flex;
@@ -58,5 +42,6 @@
                 }
             }
         }
+
     }
 }

@@ -18,6 +18,11 @@ export default function HomePage() {
                     </p>
                 </div>
             </div>
+            <div className={styles.scroll}>
+                <div className={styles.box}>
+                    <p>Scroll down</p>
+                </div>
+            </div>
         </div>
     );
 }
