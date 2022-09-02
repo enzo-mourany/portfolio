@@ -19,7 +19,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 65%;
+        height: 100%;
         @include mobile {
             height: 35%;
         }
@@ -56,6 +56,7 @@
         }
     }
     .scroll {
+        top: -100px;
         .box {
             display: flex;
             flex-direction: row;
@@ -79,6 +80,42 @@
                 }
             }
 
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 50%;
+            .links {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+                li { list-style-type: none;
+                    a {
+                        color: #fff;
+                        font-weight: lighter;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            .year {
+                margin-right: 40px;
+                p {
+                    color: #fff;
+                    font-weight: lighter;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
