@@ -27,6 +27,23 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+            <footer>
+                <div className={styles.left}>
+                    <ul className={styles.links}>
+                        <li>
+                            <a>GITHUB</a>
+                        </li>
+                        <li>
+                            <a>LINKEDIN</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className={styles.right}>
+                    <div className={styles.year}>
+                        <p>© 2022</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
