@@ -2,14 +2,12 @@
 @import './responsive.module.scss';
 .projectInner {
     display: flex;
-    //justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: row;
     height: 20px;
-    width: fit-content;
+    width: auto;
     padding: 2rem 1.75rem;
-    border-radius: 5px;
-    margin-left: 10px;
+    border: 0.1px solid #fff;
     -webkit-box-pack: justify;
     -webkit-box-align: center;
     -webkit-font-smoothing: antialiased;
