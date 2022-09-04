@@ -11,7 +11,6 @@ export default function Topbar({
             <div className={styles.left}>
                 <a href='#'>Enzo Mourany</a>
             </div>
-            <div className={styles.middle}></div>
             <div className={styles.right}>
                 <ul className={styles.nav_items}>
                     <li>
@@ -30,14 +29,8 @@ export default function Topbar({
                         </div>
                     </li>
                 </ul>
-                <div
-                    className={styles.hamburger}
-                    //onClick={() => setMenuOpen(!menuOpen)}
-
-                >
-                    <span className="line1"></span>
-                    <span className="line2"></span>
-                    <span className="line3"></span>
+                <div className={styles.nav_toggle}>
+                    <div className={styles.bar}></div>
                 </div>
             </div>
         </div>
