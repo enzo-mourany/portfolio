@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: row;
     position: fixed;
-    width: 100%;
-    background-color: #111111;
+    width: 100vw;
+    height: 50px;
+    background-color: red;
     .left {
         display: flex;
         align-items: center;
@@ -26,13 +27,21 @@
     }
     .right {
         width: 100%;
-        ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .nav_items {
             display: flex;
             flex-direction: row;
             list-style: none;
             justify-content: flex-end;
             margin-right: 30px;
             gap: 20px;
+            @include miniTablet {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             li {
                 a {
                     color: #fff;
@@ -42,6 +51,30 @@
                 }
             }
         }
-
+        .hamburger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 32px;
+            height: 25px;
+            cursor: pointer;
+            margin-right: 30px;
+            span {
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                transform-origin: left;
+                transition: all 0.5s ease;
+            }
+        }
+        @include miniTablet {
+            height: 100vh;
+            justify-content: center;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
     }
 }
