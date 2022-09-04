@@ -5,21 +5,17 @@
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: red;
     .nav_logo {
         font-family: PP, helvetica, arial, sans-serif;
         color: #fff;
         font-size: 16px;
         font-weight: 300;
         margin-left: 30px;
-
     }
     .nav_items {
         display: flex;
-        flex-direction: row;
-        list-style: none;
-        position: absolute;
         justify-content: flex-end;
+        position: relative;
         margin-right: 30px;
         gap: 20px;
         @include mobile {
@@ -31,12 +27,19 @@
             left: 0;
             width: 100%;
             height: 100%;
+            transform: translateX(-100%);
+            transition: all .45s;
         }
         .item {
             color: #fff;
             font-family: PP, helvetica, arial, sans-serif;
             font-weight: 40;
             font-size: 12px;
+            margin: 15px;
+            position: relative;
+        }
+        .item::before {
+            background: transparent;
         }
         .nav_toggle {
             display: none;
@@ -72,13 +75,21 @@
                 }
             }
         }
-        @include miniTablet {
-            height: 100vh;
-            justify-content: center;
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        .open {
+            .bar {
+                transform: translateX(-40px);
+                background: transparent;
+            }
+            .bar::before {
+                width: 32px;
+                transform: rotate(45deg) translate(26px, -26px);
+            }
+            .bar::after {
+                transform: rotate(-45deg) translate(26px, 26px);
+            }
         }
+    }
+    .nav_items .open {
+        transform: translateX(0);
     }
 }
