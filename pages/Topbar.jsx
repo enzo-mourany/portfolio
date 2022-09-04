@@ -8,31 +8,17 @@ export default function Topbar({
 }) {
     return (
         <div className={styles.topbar}>
-            <div className={styles.left}>
-                <a href='#'>Enzo Mourany</a>
-            </div>
-            <div className={styles.right}>
-                <ul className={styles.nav_items}>
-                    <li>
-                        <Link href='/Projects'>
-                            <a>PROJECTS</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='/AboutPage'>
-                            <a>ABOUT</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <div className={styles.contactLink} onClick={() => setContactPageOpen(!contactPageOpen)}>
-                            <a>CONTACT</a>
-                        </div>
-                    </li>
-                </ul>
+            <a className={styles.nav_logo} href='#'>Enzo Mourany</a>
+                <div className={styles.nav_items}>
+                    <a className={styles.item}>PROJECTS</a>
+                    <a className={styles.item}>ABOUT</a>
+                    <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
+                        <a>CONTACT</a>
+                    </div>
+                </div>
                 <div className={styles.nav_toggle}>
                     <div className={styles.bar}></div>
                 </div>
-            </div>
         </div>
     );
 }
