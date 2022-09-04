@@ -14,10 +14,6 @@
     }
     .nav_items {
         display: flex;
-        justify-content: flex-end;
-        position: relative;
-        margin-right: 30px;
-        gap: 20px;
         @include mobile {
             position: absolute;
             top: 60px;
@@ -76,20 +72,25 @@
             }
         }
         .open {
-            .bar {
-                transform: translateX(-40px);
-                background: transparent;
-            }
-            .bar::before {
-                width: 32px;
-                transform: rotate(45deg) translate(26px, -26px);
-            }
-            .bar::after {
-                transform: rotate(-45deg) translate(26px, 26px);
+            @include mobile {
+                .bar {
+                    transform: translateX(-40px);
+                    background: transparent;
+                }
+                .bar::before {
+                    width: 32px;
+                    transform: rotate(45deg) translate(26px, -26px);
+                }
+                .bar::after {
+                    transform: rotate(-45deg) translate(26px, 26px);
+                }
             }
         }
     }
     .nav_items .open {
-        transform: translateX(0);
+        @include mobile {
+            transform: translateX(0);
+        }
+
     }
 }

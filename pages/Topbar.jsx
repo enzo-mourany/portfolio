@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/topbar.module.scss';
 
@@ -10,7 +10,8 @@ export default function Topbar({
     return (
         <div className={styles.topbar}>
             <span className={styles.nav_logo} >Enzo Mourany</span>
-            <div className={styles.nav_items +  " "+ (isOpen && "open")}>
+            <div className={styles.nav_items + " " + (isOpen && "open")}>
+                <Link href="/Projects">Projects</Link>
                 <a className={styles.item}>PROJECTS</a>
                 <a className={styles.item}>ABOUT</a>
                 <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
