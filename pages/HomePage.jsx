@@ -20,30 +20,9 @@ export default function HomePage() {
                 </div>
             </div>
             <div className={styles.scroll}>
-                <div className={styles.box}>
-                    <div className={styles.content}>
-                        <p>Scroll to discover</p>
-                        <HiArrowDown style={{color: '#fff'}} />
-                    </div>
-                </div>
+                <HiArrowDown style={{ color: '#fff', width: 30, height: 30 }} />
+                <h3>Scroll to discover</h3>
             </div>
-            <footer>
-                <div className={styles.left}>
-                    <ul className={styles.links}>
-                        <li>
-                            <a>GITHUB</a>
-                        </li>
-                        <li>
-                            <a>LINKEDIN</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className={styles.right}>
-                    <div className={styles.year}>
-                        <p>© 2022</p>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 }
