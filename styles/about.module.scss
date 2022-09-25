@@ -1,12 +1,66 @@
-.about {
-    width: 100%;
-    padding-top: 100px;
-    .title {
-        color: #111111;
-        font-family: PP, helvetica, arial, sans-serif;
-    }
-    .text {
-        color: #111111;
-        font-family: PP, helvetica, arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
+@import '../styles/responsive.module.scss';
+.container {
+    margin-bottom: 100px;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .left {
+            width: 100%;
+            margin-left: 70px;
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                font-family: PP, helvetica, arial, sans-serif;
+                text-transform: uppercase;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-right: 200px;
+            .main_description {
+                margin-bottom: 40px;
+                p {
+                    font-size: 36px;
+                    font-weight: 500;
+                    color: #fff;
+                    font-family: PP, helvetica, arial, sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+            .description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50%;
+                p {
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: #fff;
+                    font-family: PP, helvetica, arial, sans-serif;
+                }
+                a {
+                    font-size: 22px;
+                    font-weight: 300;
+                    color: #fff;
+                    font-family: PP, helvetica, arial, sans-serif;
+                    a:after {
+                        position: absolute;
+                        content: '';
+                        height: 2px;
+                        background-color: #fff;
+                        width: 50%;
+                        margin-left: 15px;
+                        top: 50%;
+                    }
+                }
+            }
+        }
     }
 }
