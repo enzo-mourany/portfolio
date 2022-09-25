@@ -9,7 +9,7 @@ export default function AboutDescription() {
                     <h3 className={styles.title}>
                         <span>01. </span>FRONTEND
                     </h3>
-                    <div className={styles.text2}>
+                    <div className={styles.text}>
                         <p alt='frontend'>
                             To become a frontend developer, I started by acquiring a
                             solid foundation in <span>HTML</span> and{' '}
@@ -30,7 +30,7 @@ export default function AboutDescription() {
                     <h3 className={styles.title}>
                         <span>02. </span>BACKEND
                     </h3>
-                    <div className={styles.text2}>
+                    <div className={styles.text}>
                         <p alt='backend'>
                             I started backend development in my studies even though
                             I already had some basics in python. I learned{' '}
@@ -48,7 +48,7 @@ export default function AboutDescription() {
                     <h3 className={styles.title}>
                         <span>03. </span>TEAM WORKING
                     </h3>
-                    <div className={styles.text2}>
+                    <div className={styles.text}>
                         <p alt='team'>
                             I am used to working with a team and managing one.
                             Thanks to the different projects I have carried out, I

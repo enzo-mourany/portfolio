@@ -15,32 +15,38 @@
     }
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         gap: 40px;
-        margin-bottom: 40px;
+        //margin-bottom: 40px;
         @include laptop {
             flex-direction: column;
         }
-        .title {
-            color: #fff;
-            font-weight: 200;
-            span {
-                font-size: 12px;
-            }
-        }
-        .text2 {
-            width: 400px;
-            @include mobile {
-                width: 250px;
-            }
-            p {
+        .item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            .title {
+                margin-top: 60px;
                 color: #fff;
-                font-weight: 200;
-                font-size: 13px;
-                word-spacing: 3px;
-                line-height: 16px;
+                font-weight: 400;
                 span {
+                    font-size: 12px;
+                }
+            }
+            .text {
+                width: 60%;
+                @include mobile {
+                    width: 250px;
+                }
+                p {
+                    color: #fff;
+                    font-weight: 200;
+                    font-size: 52px;
+                    word-spacing: 3px;
+                    //line-height: 16px;
+                    span {}
                 }
             }
         }

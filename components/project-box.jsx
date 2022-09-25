@@ -11,7 +11,9 @@ export default function ProjectBox({
     githublink,
     tech,
     date,
+    img
 }) {
+    const imgLink = `https://github.com/enzo-mourany/projects-api/blob/gh-pages/IMG/${img}`;
     return (
         <div>
             <li className='item'>
@@ -25,6 +27,9 @@ export default function ProjectBox({
                     </div>
                     <div className={styles.date}>
                         <p>{date}</p>
+                    </div>
+                    <div>
+                        <img src="../public/IMG/feelfarbig-magazine-0nCFpNXJsA0-unsplash.jpg" />
                     </div>
                 </div>
             </li>

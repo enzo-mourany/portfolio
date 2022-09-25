@@ -57,6 +57,7 @@ export default function Home({ data }) {
                     githublink={result.githublink}
                     tech={result.tech}
                     date={result.date}
+                    img={result.img}
                   />
                 ))}
               </div>
