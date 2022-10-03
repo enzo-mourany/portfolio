@@ -21,6 +21,12 @@
                 font-family: PP, helvetica, arial, sans-serif;
                 text-transform: uppercase;
                 margin: 0;
+                @include phoneL {
+                    font-size: 14px;
+                }
+            }
+            @include phoneL {
+                margin-left: 20px;
             }
         }
         .right {
@@ -38,6 +44,17 @@
                     font-family: PP, helvetica, arial, sans-serif;
                     text-transform: uppercase;
                     margin: 0;
+                    @include laptop {
+                        font-size: 24px;
+                    }
+                    @include miniTablet {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                    @include phoneL {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
                 }
             }
             .description {
@@ -45,11 +62,20 @@
                 flex-direction: column;
                 justify-content: center;
                 width: 50%;
+                @include tablet {
+                    width: 80%;
+                }
                 p {
                     font-size: 22px;
                     font-weight: 300;
                     color: #fff;
                     font-family: PP, helvetica, arial, sans-serif;
+                    @include miniTablet {
+                        font-size: 16px;
+                    }
+                    @include phoneL {
+                        font-size: 12px;
+                    }
                 }
                 a {
                     font-size: 22px;
@@ -65,7 +91,22 @@
                         margin-left: 15px;
                         top: 50%;
                     }
+                    @include miniTablet {
+                        font-size: 16px;
+                    }
+                    @include phoneL {
+                        font-size: 12px;
+                    }
                 }
+            }
+            @include tablet {
+                margin-right: 140px;
+            }
+            @include phoneL {
+                margin-right: 60px;
+            }
+            @include mobile {
+                margin-right: 40px;
             }
         }
     }
