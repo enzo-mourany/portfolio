@@ -38,7 +38,7 @@ export default function Home({ data }) {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Enzo Mourany</title>
       </Head>
       <main>
         <Topbar contactPageOpen={contactPageOpen} setContactPageOpen={setContactPageOpen} />
