@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
 @import '../styles/responsive.module.scss';
 .container {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    margin-top: 200px;
     .wrapper {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
         .left {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
             width: 100%;
             margin-left: 70px;
             p {
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 500;
                 color: #fff;
                 font-family: PP, helvetica, arial, sans-serif;
                 text-transform: uppercase;
+                margin: 0;
             }
         }
         .right {
@@ -32,6 +37,7 @@
                     color: #fff;
                     font-family: PP, helvetica, arial, sans-serif;
                     text-transform: uppercase;
+                    margin: 0;
                 }
             }
             .description {
