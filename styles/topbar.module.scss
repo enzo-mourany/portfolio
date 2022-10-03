@@ -4,38 +4,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
     height: 50px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 30px;
+    padding-top: 30px;
     .nav_logo {
         font-family: PP, helvetica, arial, sans-serif;
         color: #fff;
-        font-size: 22px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-left: 80px;
     }
     .nav_items {
         display: flex;
         justify-content: flex-end;
-        @include mobile {
-            position: absolute;
-            top: 60px;
-            display: flex;
-            flex-direction: column;
-            background-color: #111111;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transform: translateX(-100%);
-            transition: all 0.45s;
-        }
+        margin-right: 80px;
         .item {
             color: #fff;
             font-family: PP, helvetica, arial, sans-serif;
-            font-size: 22px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 300;
             margin: 15px;
             position: relative;
+            text-transform: uppercase;
         }
         .item::before {
             background: transparent;
@@ -91,9 +83,10 @@
             }
         }
     }
-    .nav_items .open {
-        @include mobile {
-            transform: translateX(0);
-        }
+    .open {
+        display: flex;
+        background-color: #fff;
+        justify-content: flex-end;
+        flex-direction: column;
     }
 }
