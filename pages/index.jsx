@@ -39,6 +39,7 @@ export default function Home({ data }) {
     <>
       <Head>
         <title>Enzo Mourany</title>
+        <meta name='description' content='French Web and Mobile developer' />
       </Head>
       <main>
         <Topbar contactPageOpen={contactPageOpen} setContactPageOpen={setContactPageOpen} />
