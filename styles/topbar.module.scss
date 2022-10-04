@@ -24,6 +24,9 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 80px;
+        @include miniTablet {
+            display: none;
+        }
         .item {
             color: #fff;
             font-family: PP, helvetica, arial, sans-serif;
@@ -32,6 +35,21 @@
             margin: 15px;
             position: relative;
             text-transform: uppercase;
+        }
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        display: none;
+        right: 0;
+        margin-right: 80px;
+        background-color: #fff;
+        @include miniTablet {
+            display: flex;
+        }
+        p {
+            font-size: 22px;
+            margin: 20px;
         }
     }
     .nav_items_open {

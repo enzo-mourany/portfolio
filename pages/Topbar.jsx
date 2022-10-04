@@ -29,7 +29,7 @@ export default function Topbar({
 */
 
     const [isOpen, setIsOpen] = useState(false);
-    const [isHamburgerMenuShown, setIsHamburgerMenuShown] = useState(true);
+    const [isHamburgerMenuShown, setIsHamburgerMenuShown] = useState(false);
 
     return (
         <div className={styles.topbar}>
@@ -45,13 +45,18 @@ export default function Topbar({
                     </ul>
                 </div>
             ) : (
-                <div className={styles.nav_items}>
-                    <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
-                    <a className={styles.item}>About</a>
-                    <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
-                        <a>Contact</a>
+                <>
+                    <div className={styles.nav_items}>
+                        <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
+                        <a className={styles.item}>About</a>
+                        <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
+                            <a>Contact</a>
+                        </div>
                     </div>
-                </div>
+                    <div className={styles.hamburger}>
+                        <p>Test</p>
+                    </div>
+                </>
             )
             }
 
