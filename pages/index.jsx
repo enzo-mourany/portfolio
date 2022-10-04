@@ -57,6 +57,7 @@ export default function Home({ data }) {
                     description={result.description}
                     githublink={result.githublink}
                     tech={result.tech}
+                    type={result.type}
                     date={result.date}
                     img={result.img}
                   />
