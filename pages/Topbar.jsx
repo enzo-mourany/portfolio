@@ -29,39 +29,28 @@ export default function Topbar({
 */
 
     const [isOpen, setIsOpen] = useState(false);
-    const [isHamburgerMenuShown, setIsHamburgerMenuShown] = useState(false);
+
 
     return (
         <div className={styles.topbar}>
             <span className={styles.nav_logo}>Enzo Mourany</span>
-            {isHamburgerMenuShown ? (
-                <div className={isOpen ? styles.nav_items : styles.nav_items_open}>
-                    <ul>
-                        <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
-                        <a className={styles.item}>About</a>
-                        <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
-                            <a>Contact</a>
-                        </div>
-                    </ul>
-                </div>
-            ) : (
-                <>
-                    <div className={styles.nav_items}>
-                        <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
-                        <a className={styles.item}>About</a>
-                        <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
-                            <a>Contact</a>
-                        </div>
+            <div className={isOpen ? styles.nav_items_open : styles.nav_items}>
+                <ul>
+                    <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
+                    <a className={styles.item}>About</a>
+                    <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
+                        <a>Contact</a>
                     </div>
-                    <div className={styles.hamburger}>
-                        <p>Test</p>
-                    </div>
-                </>
-            )
-            }
-
-
-
+                </ul>
+            </div>
+            <div
+                className={styles.hamburger}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <span className="line1"></span>
+                <span className="line2"></span>
+                <span className="line3"></span>
+            </div>
         </div>
     );
 }
