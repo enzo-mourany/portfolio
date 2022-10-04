@@ -43,7 +43,7 @@
     }
     .hamburger {
         display: none;
-        position: absolute;
+        //position: absolute;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
@@ -64,6 +64,7 @@
         }
     }
     .hamburger_open {
+        display: flex;
         position: absolute;
         justify-content: space-between;
         flex-direction: column;
@@ -73,9 +74,6 @@
         cursor: pointer;
         right: 0;
         margin-right: 80px;
-        @include miniTablet {
-            display: flex;
-        }
         span {
             &:first-child {
                 background-color: white;
