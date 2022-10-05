@@ -20,8 +20,11 @@ export default function HomePage() {
                 </div>
             </div>
             <div className={styles.scroll}>
-                <HiArrowDown style={{ color: '#fff', width: 30, height: 30 }} />
-                <h3>Scroll to discover</h3>
+                <div className={styles.arrow}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     );

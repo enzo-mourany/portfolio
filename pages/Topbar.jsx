@@ -18,7 +18,9 @@ export default function Topbar({
             <div className={styles.nav_items}>
                 <ul>
                     <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
-                    <a className={styles.item}>About</a>
+                    <Link href="/AboutPage">
+                        <a className={styles.item}>About</a>
+                    </Link>
                     <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
                         <a onClick={() => setContactPageOpen(!contactPageOpen)} >Contact</a>
                     </div>
