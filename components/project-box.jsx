@@ -31,7 +31,9 @@ export default function ProjectBox({
                             <p className={styles.projectType}>{type}</p>
                         </div>
                         <div className={styles.tech}>
-                            <p className={styles.projectTech}>{tech}</p>
+                            {tech.map((result) => (
+                                <p className={styles.projectTech}>{result} - </p>
+                            ))}
                         </div>
 
                     </div>
@@ -42,7 +44,6 @@ export default function ProjectBox({
                 </div>
                 <div className={styles.border}>
                     <span></span>
-
                 </div>
             </li>
         </div>
