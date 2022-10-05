@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 200px;
+    .top {
+        display: flex;
+        flex-direction: row;
+        gap: 400px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        .left {
+            display: flex;
+            justify-content: flex-start;
+            p {
+                color: #fff;
+                font-size: 22px;
+                text-transform: uppercase;
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            h1 {
+                color: #fff;
+                font-size: 6vw;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            p {
+                color: #fff;
+                font-size: 34px;
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
