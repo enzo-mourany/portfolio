@@ -14,7 +14,11 @@ export default function About() {
                     <div className={styles.main_description}>
                         <p>I am passionate about web and mobile technology.</p>
                         <br />
+                        <br />
+                        <br />
                         <p>I first started to learn frontend development by building e-commerce and storefront websites. I was able to learn a lot of technologies like React.JS, Next.Js and also more specific technologies like ParallaxJS or ThreeJS.</p>
+                        <br />
+                        <br />
                         <br />
                         <p>In parallel, I started developing mobile applications in React Native, starting with an application of Tabata
                         </p>

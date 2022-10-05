@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
 @import '../styles/responsive.module.scss';
 .container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 300px;
     margin-top: 200px;
     .wrapper {
@@ -8,12 +10,12 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: center;
+        width: 90%;
         .left {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-start;
             width: 100%;
-            margin-left: 70px;
             p {
                 font-size: 22px;
                 font-weight: 500;
@@ -34,11 +36,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            margin-right: 200px;
+            //margin-right: 200px;
             .main_description {
                 margin-bottom: 40px;
                 p {
                     font-size: 36px;
+                    line-height: 50px;
                     font-weight: 500;
                     color: #fff;
                     font-family: PP, helvetica, arial, sans-serif;
@@ -70,6 +73,7 @@
                     font-weight: 300;
                     color: #fff;
                     font-family: PP, helvetica, arial, sans-serif;
+                    line-height: 30px;
                     @include miniTablet {
                         font-size: 16px;
                     }
@@ -78,25 +82,35 @@
                     }
                 }
                 a {
+                    width: fit-content;
                     font-size: 22px;
                     font-weight: 300;
                     color: #fff;
+                    margin-top: 50px;
                     font-family: PP, helvetica, arial, sans-serif;
-                    a:after {
-                        position: absolute;
-                        content: '';
-                        height: 2px;
-                        background-color: #fff;
-                        width: 50%;
-                        margin-left: 15px;
-                        top: 50%;
-                    }
                     @include miniTablet {
                         font-size: 16px;
                     }
                     @include phoneL {
                         font-size: 12px;
                     }
+                }
+                a::after {
+                    content: '';
+                    display: block;
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
+                    transition: 0.4s ease-in-out;
+                }
+                a:hover::after {
+                    content: '';
+                    display: block;
+                    margin-top: 18px;
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
                 }
             }
             @include tablet {
