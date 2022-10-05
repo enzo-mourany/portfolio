@@ -147,6 +147,12 @@
         align-items: center;
         transform: translateY(-150px);
         gap: 10px;
+        opacity: 0;
+        animation-name: appear2;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
         .arrow {
             position: absolute;
             top: 50%;
@@ -184,6 +190,17 @@
         }
         @include mobile {
             transform: translateY(-200px);
+        }
+        @keyframes appear2 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
         }
     }
 }
