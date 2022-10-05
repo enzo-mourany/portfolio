@@ -17,9 +17,26 @@
         font-size: 16px;
         font-weight: 300;
         text-transform: uppercase;
+        position: relative;
         margin-left: 80px;
+        opacity: 0;
+        animation-name: reveal;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
         @include miniTablet {
             font-size: 12px;
+        }
+    }
+    @keyframes reveal {
+        0% {
+            opacity: 0;
+            bottom: 50px;
+        }
+        100% {
+            opacity: 1;
+            bottom: 0;
         }
     }
     .nav_items {
@@ -40,8 +57,24 @@
                 margin: 15px;
                 position: relative;
                 text-transform: uppercase;
-                transition: all 0.1s ease;
+                //transition: all 0.1s ease;
                 cursor: pointer;
+                opacity: 0;
+                animation-name: appear;
+                animation-duration: 0.4s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                animation-delay: 1.5s;
+            }
+            @keyframes appear {
+                0% {
+                    opacity: 0;
+                    bottom: 50px;
+                }
+                100% {
+                    opacity: 1;
+                    bottom: 0;
+                }
             }
             .item::after {
                 content: '';
