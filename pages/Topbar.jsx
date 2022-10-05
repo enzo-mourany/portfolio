@@ -3,10 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/topbar.module.scss';
 
 
-export default function Topbar({
-    contactPageOpen,
-    setContactPageOpen,
-}) {
+export default function Topbar() {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -40,9 +37,9 @@ export default function Topbar({
                     <Link href="/AboutPage">
                         <a className={styles.item}>About</a>
                     </Link>
-                    <div className={styles.item} onClick={() => setContactPageOpen(!contactPageOpen)}>
-                        <a onClick={() => setContactPageOpen(!contactPageOpen)} >Contact</a>
-                    </div>
+                    <Link href="/Contact">
+                        <a className={styles.item}>Contact</a>
+                    </Link>
                 </ul>
             </div>
             <div

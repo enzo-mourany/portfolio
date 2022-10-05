@@ -34,7 +34,6 @@ const breakPoints = [
 
 export default function Home({ data }) {
 
-  const [contactPageOpen, setContactPageOpen] = useState(false);
   return (
     <>
       <Head>
@@ -42,7 +41,7 @@ export default function Home({ data }) {
         <meta name='description' content='French Web and Mobile developer' />
       </Head>
       <main>
-        <Topbar contactPageOpen={contactPageOpen} setContactPageOpen={setContactPageOpen} />
+        <Topbar />
         <div className={styles.container}>
           <div className={styles.horizontalBloc}>
             <HomePage className='homePage' />
@@ -67,7 +66,6 @@ export default function Home({ data }) {
             </div>
           </div>
         </div>
-        <Contact contactPageOpen={contactPageOpen} setContactPageOpen={setContactPageOpen} />
       </main>
     </>
   );
