@@ -38,6 +38,23 @@
                 margin: 15px;
                 position: relative;
                 text-transform: uppercase;
+                transition: all 0.1s ease;
+                cursor: pointer;
+            }
+            .item::after {
+                content: '';
+                display: block;
+                width: 0%;
+                height: 1px;
+                background: #fff;
+                transition: 0.5s ease-in-out;
+            }
+            .item:hover::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #fff;
             }
         }
     }
