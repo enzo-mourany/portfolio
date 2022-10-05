@@ -26,7 +26,9 @@ export default function About() {
                     <div className={styles.description}>
                         <p>After a few months, I decided to learn backend development to be able to create fullstack projects such as social networks. I chose javascript technologies with NodeJS, Express and MongoDB</p>
                         <p>I like to make interfaces that are pleasant to use and intuitive for the users. Fluid and warm ashes.</p>
-                        <a href="#">More about me</a>
+                        <Link href="/AboutPage">
+                            <a>More about me</a>
+                        </Link>
                     </div>
                 </div>
             </div>

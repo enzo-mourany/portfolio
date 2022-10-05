@@ -9,12 +9,8 @@
     position: fixed;
     bottom: -100vh;
     z-index: 2;
-    background-color: #111111;
     transition: all 0.6s ease;
     -webkit-font-smoothing: antialiased;
-    &.active {
-        bottom: -5vh;
-    }
     .header {
         display: flex;
         flex-direction: column;
