@@ -12,49 +12,11 @@ export default function Contact() {
           <div className={styles.title}>
             <h2>GET IN TOUCH</h2>
           </div>
-          <div className={styles.message}>
-            <h3>
-              <span>W</span>
-              <span>A</span>
-              <span>N</span>
-              <span>T</span>
-              <span> </span>
-              <span>T</span>
-              <span>O</span>
-              <span> </span>
-              <span>D</span>
-              <span>I</span>
-              <span>S</span>
-              <span>C</span>
-              <span>U</span>
-              <span>S</span>
-              <span>S</span>
-              <span> </span>
-              <span>A</span>
-              <span> </span>
-              <span>N</span>
-              <span>E</span>
-              <span>W</span>
-              <span> </span>
-              <span>P</span>
-              <span>R</span>
-              <span>O</span>
-              <span>J</span>
-              <span>E</span>
-              <span>C</span>
-              <span>T</span>
-              <span> </span>
-              <span>?</span>
-            </h3>
-          </div>
           <div className={styles.mailButton}>
             <a href='mailto:enzo.mourany@outlook.com'>
-              Send me an e-mail
+              Send me an message
             </a>
           </div>
-        </div>
-        <div>
-          <p>close</p>
         </div>
         <div className={styles.footer}>
           <p>THANKS FOR YOUR VISIT!</p>

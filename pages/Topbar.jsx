@@ -7,24 +7,24 @@ export default function Topbar() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-
     const [show, setShow] = useState(true);
-    let lastScrollTop = 0;
-    const controlTopbar = () => {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-            setShow(false);
-        } else {
-            setShow(true);
+    /*
+        let lastScrollTop = 0;
+        const controlTopbar = () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                setShow(false);
+            } else {
+                setShow(true);
+            }
+            lastScrollTop = scrollTop;
         }
-        lastScrollTop = scrollTop;
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', controlTopbar);
-        return () => window.removeEventListener('scroll', controlTopbar);
-    }, []);
-
+    
+        useEffect(() => {
+            window.addEventListener('scroll', controlTopbar);
+            return () => window.removeEventListener('scroll', controlTopbar);
+        }, []);
+    */
 
     return (
         <div className={show ? styles.topbar : styles.topbar_hidden}>
