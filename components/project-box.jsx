@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from '../styles/project-box.module.scss';
 import Link from 'next/link';
+import Image from 'next/image'
 
 export default function ProjectBox({
     id,
@@ -14,7 +15,10 @@ export default function ProjectBox({
     date,
     img
 }) {
-    const imgLink = `https://github.com/enzo-mourany/projects-api/blob/gh-pages/IMG/${img}`;
+    const src = 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80';
+    const myLoader = () => {
+        return src;
+    }
     return (
         <div>
             <li className={styles.item}>
@@ -39,7 +43,7 @@ export default function ProjectBox({
                     </div>
 
                     <div className={styles.right}>
-                        <p> </p>
+                        <Image className={styles.img} loader={myLoader} src={src} alt="" width={720} height="440" />
                     </div>
                 </div>
                 <div className={styles.border}>

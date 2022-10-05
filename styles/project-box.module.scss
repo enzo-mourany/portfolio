@@ -16,12 +16,24 @@
         -webkit-box-pack: justify;
         -webkit-box-align: center;
         -webkit-font-smoothing: antialiased;
+        @include bigLaptop {
+            height: 500px;
+        }
+        @include mediumLaptop {
+            height: 400px;
+        }
+        @include laptop {
+            height: 300px;
+        }
+        @include tablet {
+            height: 200px;
+        }
         @include miniTablet {
-            height: 8px;
+            height: 100px;
             padding: 1.5rem 1.75rem;
         }
         @include mobile {
-            height: 4px;
+            height: 50px;
             padding: 1.2rem 1.75rem;
         }
         .left {
@@ -32,6 +44,12 @@
             width: auto;
             .title {
                 margin-bottom: 40px;
+                @include tablet {
+                    margin-bottom: 20px;
+                }
+                @include miniTablet {
+                    margin-bottom: 10px;
+                }
                 a {
                     .projectTitle {
                         margin: 0;
@@ -93,10 +111,16 @@
             }
         }
         .right {
-            background-color: #44444444;
             width: 35%;
-            height: 60%;
-            margin-right: 10px;
+            img {
+                width: 100%;
+                height: unset;
+                object-fit: cover;
+                object-position: center;
+                position: relative;
+                //opacity: 0;
+                transition: all 0.7s ease;
+            }
         }
     }
     .border {
@@ -113,6 +137,15 @@
             background-color: #fff;
             transform-origin: left;
             transition: all 0.5s ease;
+        }
+    }
+}
+
+.item:hover {
+    .right {
+        img {
+            //opacity: 1;
+            transform: translateY(-20px);
         }
     }
 }
