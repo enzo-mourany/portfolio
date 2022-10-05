@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import ProjectCard from '../components/project-card';
+import Topbar from './topbar';
+
 
 const defaultEndpoint = 'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
 
@@ -17,20 +19,23 @@ export async function getServerSideProps() {
 
 export default function Projects({ data }) {
     return (
-        <div>
+        <>
+            <Topbar />
             <div>
-                {data.map((result) => (
-                    // eslint-disable-next-line react/jsx-key
-                    <ProjectCard
-                        id={result.id}
-                        title={result.title}
-                        description={result.description}
-                        githublink={result.githublink}
-                        tech={result.tech}
-                        date={result.date}
-                    />
-                ))}
+                <div>
+                    {data.map((result) => (
+                        // eslint-disable-next-line react/jsx-key
+                        <ProjectCard
+                            id={result.id}
+                            title={result.title}
+                            description={result.description}
+                            githublink={result.githublink}
+                            tech={result.tech}
+                            date={result.date}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }
