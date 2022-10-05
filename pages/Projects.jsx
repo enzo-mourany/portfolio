@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import ProjectCard from '../components/project-card';
-import Topbar from './topbar';
+import Topbar from './Topbar';
 
 
 const defaultEndpoint = 'https://raw.githubusercontent.com/enzo-mourany/projects-api/gh-pages/projects.json';
