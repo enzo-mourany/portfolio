@@ -12,7 +12,9 @@ export default function Topbar({
 
     return (
         <div className={styles.topbar}>
-            <span className={styles.nav_logo}>Enzo Mourany</span>
+            <Link href={"/"}>
+                <a className={styles.nav_logo}>Enzo Mourany</a>
+            </Link>
             <div className={styles.nav_items}>
                 <ul>
                     <Link className={styles.item} href="/Projects"><a className={styles.item}>Works</a></Link>
