@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/contact.module.scss';
-import Topbar from './topbar';
+import Topbar from './Topbar';
 
 
 export default function Contact() {
