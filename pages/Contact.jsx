@@ -10,7 +10,27 @@ export default function Contact() {
       <div className={styles.contact}>
         <div className={styles.header}>
           <div className={styles.mailButton}>
-            <p>Send me an message</p>
+            <ul>
+              <li>
+                <span>S</span>
+                <span>E</span>
+                <span>N</span>
+                <span>D</span>
+                <span>&nbsp;</span>
+                <span>M</span>
+                <span>E</span>
+                <span>&nbsp;</span>
+                <span>A</span>
+                <span>&nbsp;</span>
+                <span>M</span>
+                <span>E</span>
+                <span>S</span>
+                <span>S</span>
+                <span>A</span>
+                <span>G</span>
+                <span>E</span>
+              </li>
+            </ul>
             <a href='mailto:enzo.mourany@outlook.com'>
               <ul>
                 <li>

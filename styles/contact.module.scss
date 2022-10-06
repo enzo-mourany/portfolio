@@ -24,10 +24,97 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            p {
-                color: #fff;
-                font-size: 32px;
-                text-transform: uppercase;
+            gap: 50px;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    overflow: hidden;
+                    justify-content: center;
+                    span {
+                        position: relative;
+                        box-sizing: border-box;
+                        line-height: 0.8;
+                        margin: 0;
+                        padding-top: 15px;
+                        color: transparent;
+                        font-size: 32px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: #fff;
+                        transition: all 0.3s;
+                        opacity: 0;
+                        animation-name: reveal;
+                        animation-duration: 0.2s;
+                        animation-timing-function: ease-out;
+                        animation-fill-mode: forwards;
+                    }
+                    span:nth-of-type(1) {
+                        animation-delay: 2s;
+                    }
+                    span:nth-of-type(2) {
+                        animation-delay: 2.05s;
+                    }
+                    span:nth-of-type(3) {
+                        animation-delay: 2.1s;
+                    }
+                    span:nth-of-type(4) {
+                        animation-delay: 2.15s;
+                    }
+                    span:nth-of-type(5) {
+                        animation-delay: 2.2s;
+                    }
+                    span:nth-of-type(6) {
+                        animation-delay: 2.25s;
+                    }
+                    span:nth-of-type(7) {
+                        animation-delay: 2.3s;
+                    }
+                    span:nth-of-type(8) {
+                        animation-delay: 2.35s;
+                    }
+                    span:nth-of-type(9) {
+                        animation-delay: 2.4s;
+                    }
+                    span:nth-of-type(10) {
+                        animation-delay: 2.45s;
+                    }
+                    span:nth-of-type(11) {
+                        animation-delay: 2.5s;
+                    }
+                    span:nth-of-type(12) {
+                        animation-delay: 2.55s;
+                    }
+                    span:nth-of-type(13) {
+                        animation-delay: 2.6s;
+                    }
+                    span:nth-of-type(14) {
+                        animation-delay: 2.65s;
+                    }
+                    span:nth-of-type(15) {
+                        animation-delay: 2.7s;
+                    }
+                    span:nth-of-type(16) {
+                        animation-delay: 2.75s;
+                    }
+                    span:nth-of-type(17) {
+                        animation-delay: 2.8s;
+                    }
+                    @keyframes reveal {
+                        0% {
+                            opacity: 0;
+                            bottom: -30px;
+                        }
+                        100% {
+                            opacity: 1;
+                            bottom: 0;
+                        }
+                    }
+                }
             }
             a {
                 ul {
