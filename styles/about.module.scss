@@ -50,6 +50,10 @@
                     @include laptop {
                         font-size: 24px;
                     }
+                    @include tablet {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
                     @include miniTablet {
                         font-size: 20px;
                         font-weight: 400;
@@ -74,6 +78,10 @@
                     color: #fff;
                     font-family: PP, helvetica, arial, sans-serif;
                     line-height: 30px;
+                    @include tablet {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                     @include miniTablet {
                         font-size: 16px;
                     }
@@ -88,6 +96,10 @@
                     color: #fff;
                     margin-top: 50px;
                     font-family: PP, helvetica, arial, sans-serif;
+                    @include tablet {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                     @include miniTablet {
                         font-size: 16px;
                     }
