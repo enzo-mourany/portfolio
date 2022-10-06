@@ -17,6 +17,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 40px;
         //margin-bottom: 40px;
         @include laptop {
@@ -25,16 +26,9 @@
         .item {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-around;
-            .title {
-                margin-top: 60px;
-                color: #fff;
-                font-weight: 400;
-                span {
-                    font-size: 12px;
-                }
-            }
+            justify-content: center;
+            align-items: center;
+            width: 90%;
             .text {
                 width: 60%;
                 @include mobile {
@@ -43,10 +37,10 @@
                 p {
                     color: #fff;
                     font-weight: 200;
-                    font-size: 52px;
+                    font-size: 24px;
                     word-spacing: 3px;
-                    //line-height: 16px;
-                    span {}
+                    line-height: 32px;
+                    margin: 0 auto;
                 }
             }
         }

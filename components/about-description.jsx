@@ -6,9 +6,6 @@ export default function AboutDescription() {
         <div className={styles.aboutDescription}>
             <div className={styles.container}>
                 <div className={styles.item}>
-                    <h3 className={styles.title}>
-                        <span>01. </span>FRONTEND
-                    </h3>
                     <div className={styles.text}>
                         <p alt='frontend'>
                             To become a frontend developer, I started by acquiring a
@@ -27,9 +24,6 @@ export default function AboutDescription() {
                 </div>
 
                 <div className={styles.item}>
-                    <h3 className={styles.title}>
-                        <span>02. </span>BACKEND
-                    </h3>
                     <div className={styles.text}>
                         <p alt='backend'>
                             I started backend development in my studies even though
@@ -45,9 +39,6 @@ export default function AboutDescription() {
                 </div>
 
                 <div className={styles.item}>
-                    <h3 className={styles.title}>
-                        <span>03. </span>TEAM WORKING
-                    </h3>
                     <div className={styles.text}>
                         <p alt='team'>
                             I am used to working with a team and managing one.
