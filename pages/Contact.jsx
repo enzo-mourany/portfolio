@@ -9,17 +9,14 @@ export default function Contact() {
       <Topbar />
       <div className={styles.contact}>
         <div className={styles.header}>
-          <div className={styles.title}>
-            <h2>GET IN TOUCH</h2>
-          </div>
           <div className={styles.mailButton}>
+            <p>Send me an message</p>
             <a href='mailto:enzo.mourany@outlook.com'>
-              Send me an message
+              enzo.mourany@outlook.com
             </a>
           </div>
         </div>
         <div className={styles.footer}>
-          <p>THANKS FOR YOUR VISIT!</p>
           <div className={styles.links}>
             <ul>
               <li>
