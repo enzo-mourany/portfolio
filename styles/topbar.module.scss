@@ -245,6 +245,12 @@
         cursor: pointer;
         right: 0;
         margin-right: 80px;
+        opacity: 0;
+        animation-name: reveal2;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1.8s;
         @include miniTablet {
             display: flex;
         }
@@ -254,6 +260,16 @@
             background-color: white;
             transform-origin: left;
             transition: all 0.5s ease;
+        }
+    }
+    @keyframes reveal2 {
+        0% {
+            opacity: 0;
+            bottom: 50px;
+        }
+        100% {
+            opacity: 1;
+            bottom: 0;
         }
     }
     .hamburger_open {
