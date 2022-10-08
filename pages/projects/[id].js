@@ -43,7 +43,8 @@ export default function Post({ post }) {
                         </div>
                     </div>
                     <div className={styles.right}>
-
+                        <div className={styles.image}>
+                        </div>
                     </div>
                 </div>
 

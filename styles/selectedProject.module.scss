@@ -23,16 +23,25 @@
             justify-content: space-between;
             align-items: center;
             gap: 200px;
+            @include miniTablet {
+                gap: 50px;
+            }
             .projectTitle {
                 .title {
                     color: #fff;
                     font-size: 20px;
+                    @include miniTablet {
+                        font-size: 15px;
+                    }
                 }
             }
             .repoLink {
                 .github {
                     color: #fff;
                     font-size: 20px;
+                    @include miniTablet {
+                        font-size: 15px;
+                    }
                 }
                 .github::after {
                     content: '';
@@ -55,6 +64,9 @@
             a {
                 color: #fff;
                 font-size: 20px;
+                @include miniTablet {
+                    font-size: 15px;
+                }
             }
             a::after {
                 content: '';
@@ -74,7 +86,10 @@
         }
     }
     .wrapper {
+        display: flex;
+        flex-direction: row;
         height: 100%;
+        gap: 100px;
         .left {
             display: flex;
             flex-direction: column;
@@ -82,19 +97,32 @@
             padding-left: 70px;
             width: 40%;
             height: 85%;
+            @include miniTablet {
+                width: auto;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
             .description {
-                width: 85%;
+                width: 100%;
                 color: #fff;
                 font-size: 32px;
                 line-height: 40px;
+                @include miniTablet {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
             }
             .projectInfo {
+                margin-top: 70px;
                 .projectInfo_title {
                     p {
                         color: #fff;
                         font-size: 20px;
                         text-transform: uppercase;
-                        padding-bottom: 10px;
+                        padding-bottom: 5px;
+                        @include miniTablet {
+                            font-size: 16px;
+                        }
                     }
                 }
                 .projectInfo_title::after {
@@ -115,6 +143,13 @@
                         p {
                             color: #fff;
                             font-size: 20px;
+                            @include miniTablet {
+                                font-size: 16px;
+                            }
+                        }
+                        @include miniTablet {
+                            padding-top: 7px;
+                            padding-bottom: 7px;
                         }
                     }
                 }
@@ -136,6 +171,13 @@
                         p {
                             color: #fff;
                             font-size: 20px;
+                            @include miniTablet {
+                                font-size: 16px;
+                            }
+                        }
+                        @include miniTablet {
+                            padding-top: 7px;
+                            padding-bottom: 7px;
                         }
                     }
                 }
@@ -148,6 +190,20 @@
                     background: #fff;
                 }
             }
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 70px;
+            .image {
+                width: 600px;
+                height: 400px;
+                background-color: black;
+            }
+        }
+        @include miniTablet {
+            flex-direction: column;
         }
     }
 }
