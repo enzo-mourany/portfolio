@@ -6,25 +6,41 @@ export default function Post({ post }) {
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.topbar}>
-                    <div className={styles.backMenu}>
+                <div className={styles.topBar}>
+                    <div className={styles.topBar_left}>
+                        <div className={styles.projectTitle}>
+                            <p className={styles.title}>{post.title}</p>
+                        </div>
+                        <div className={styles.repoLink}>
+                            <a className={styles.github} href={post.githubLink}>View code</a>
+                        </div>
+                    </div>
+                    <div className={styles.topBar_right}>
                         <Link href={'/'}>
-                            <a>Back</a>
+                            <a>Close</a>
                         </Link>
                     </div>
                 </div>
                 <div className={styles.wrapper}>
                     <div className={styles.left}>
-                        <h1 className={styles.title}>{post.title}</h1>
-                        <a className={styles.github} href={post.githubLink}>View code</a>
                         <p className={styles.description}>{post.description}</p>
-                        <p className={styles.delivered}>{post.delivered}</p>
-                        <p className={styles.retex}>{post.retex}</p>
-                        <ul className={styles.techList}>
-                            {post.tech.map((t) => (
-                                <li key={t.id} className={styles.tech} >{t}</li>
-                            ))}
-                        </ul>
+                        <div className={styles.projectInfo}>
+                            <div className={styles.projectInfo_title}>
+                                <p>Project Info</p>
+                            </div>
+                            <div className={styles.projectType}>
+                                <div>
+                                    <p>Type</p>
+                                    <p>{post.type}</p>
+                                </div>
+                            </div>
+                            <div className={styles.projectYear}>
+                                <div>
+                                    <p>Year</p>
+                                    <p>{post.date}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.right}>
 

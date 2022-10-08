@@ -3,114 +3,150 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: #535e5a;
+    position: fixed;
     width: 100%;
-    .topbar {
+    height: 100%;
+    .topBar {
         display: flex;
-        justify-content: flex-start;
-        margin: 40px;
-        .backMenu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        .topBar_left {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 200px;
+            .projectTitle {
+                .title {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+            .repoLink {
+                .github {
+                    color: #fff;
+                    font-size: 20px;
+                }
+                .github::after {
+                    content: '';
+                    display: block;
+                    width: 0%;
+                    height: 1px;
+                    background: #fff;
+                    transition: 0.5s ease-in-out;
+                }
+                .github:hover::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background: #fff;
+                }
+            }
+        }
+        .topBar_right {
             a {
                 color: #fff;
                 font-size: 20px;
             }
-            a:hover {
-                text-decoration: underline;
+            a::after {
+                content: '';
+                display: block;
+                width: 0%;
+                height: 1px;
+                background: #fff;
+                transition: 0.5s ease-in-out;
+            }
+            a:hover::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #fff;
             }
         }
     }
     .wrapper {
-        display: flex;
-        flex-direction: row;
-        @include tablet {
-            flex-direction: column;
-        }
+        height: 100%;
         .left {
-            margin: 40px;
-            width: 50%;
-            @include tablet {
-                width: 90%;
-            }
-            @include phoneL {
-                width: 80%;
-            }
-            .title {
-                color: #fff;
-                font-size: 70px;
-                font-weight: 200;
-                text-transform: uppercase;
-                @include phoneL {
-                    font-size: 40px;
-                }
-                @include mobile {
-                    font-size: 30px;
-                }
-            }
-            .title::after {
-                content: '';
-                width: 100%;
-                color: #fff;
-                display: inline-block;
-                border-bottom: 3px solid #fff;
-            }
-            .github {
-                color: $lightRed;
-                font-size: 15px;
-                font-weight: 200;
-            }
-            .github:hover {
-                text-decoration: underline;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 70px;
+            width: 40%;
+            height: 85%;
             .description {
+                width: 85%;
                 color: #fff;
-                font-size: 15px;
-                font-weight: 200;
-                @include mobile {
-                    font-size: 12px;
-                }
+                font-size: 32px;
+                line-height: 40px;
             }
-            .delivered {
-                color: #fff;
-                font-size: 22px;
-                font-weight: 200;
-                letter-spacing: 1px;
-                @include phoneL {
-                    font-size: 15px;
+            .projectInfo {
+                .projectInfo_title {
+                    p {
+                        color: #fff;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                    }
                 }
-                @include mobile {
-                    font-size: 12px;
+                .projectInfo_title::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    opacity: 0.4;
+                    background: #fff;
                 }
-            }
-            .retex {
-                color: #fff;
-                font-size: 22px;
-                font-weight: 200;
-                letter-spacing: 1px;
-                @include phoneL {
-                    font-size: 15px;
+                .projectType {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        p {
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
                 }
-                @include mobile {
-                    font-size: 12px;
+                .projectType::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    opacity: 0.4;
+                    background: #fff;
                 }
-            }
-            .techList {
-                display: flex;
-                flex-direction: row;
-                list-style-type: none;
-                padding: 0;
-                gap: 20px;
-                .tech {
-                    font-weight: 600;
-                    color: #fff;
-                    letter-spacing: 0.8px;
+                .projectYear {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        p {
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
                 }
-            }
-        }
-        .right {
-            width: 50%;
-            margin: 40px;
-            background: #fff;
-            @include tablet {
-                width: 90%;
+                .projectYear::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    opacity: 0.4;
+                    background: #fff;
+                }
             }
         }
     }
