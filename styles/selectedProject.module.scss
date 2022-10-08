@@ -201,6 +201,10 @@
                 height: 400px;
                 background-color: black;
             }
+            @include miniTablet {
+                padding-right: 0px;
+                padding: 10px;
+            }
         }
         @include miniTablet {
             flex-direction: column;
