@@ -112,13 +112,19 @@
         .right {
             width: 35%;
             img {
+                z-index: 1;
                 width: 100%;
                 height: unset;
-                object-fit: cover;
-                object-position: center;
+                //object-fit: cover;
+                //object-position: center;
                 position: relative;
                 //opacity: 0;
                 transition: all 0.7s ease;
+                top: 0;
+                left: 0;
+            }
+            div {
+                z-index: 1;
             }
         }
     }
@@ -143,8 +149,9 @@
 .item:hover {
     .right {
         img {
-            //opacity: 1;
-            transform: translateY(-20px);
+            opacity: 1;
+            height: 100%;
+            transform: translateY(-20%);
         }
     }
 }

@@ -43,7 +43,8 @@ export default function ProjectBox({
                     </div>
 
                     <div className={styles.right}>
-                        <Image className={styles.img} loader={myLoader} src={src} alt="" width={720} height="440" />
+                        <Image className={styles.img} loader={myLoader} src={src} alt="" width={720} height={440} />
+                        <div></div>
                     </div>
                 </div>
                 <div className={styles.border}>
