@@ -23,7 +23,9 @@ export default function Post({ post }) {
                 </div>
                 <div className={styles.wrapper}>
                     <div className={styles.left}>
-                        <p className={styles.description}>{post.description}</p>
+                        <span>
+                            <p className={styles.description}>{post.description}</p>
+                        </span>
                         <div className={styles.projectInfo}>
                             <div className={styles.projectInfo_title}>
                                 <p>Project Info</p>

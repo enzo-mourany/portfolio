@@ -27,6 +27,14 @@
                 gap: 50px;
             }
             .projectTitle {
+                position: relative;
+                opacity: 0;
+                top: -50px;
+                animation-name: reveal;
+                animation-duration: 0.4s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
                 .title {
                     color: #fff;
                     font-size: 20px;
@@ -36,6 +44,14 @@
                 }
             }
             .repoLink {
+                position: relative;
+                opacity: 0;
+                top: -50px;
+                animation-name: reveal;
+                animation-duration: 0.4s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
                 .github {
                     color: #fff;
                     font-size: 20px;
@@ -61,6 +77,14 @@
             }
         }
         .topBar_right {
+            position: relative;
+            opacity: 0;
+            top: -50px;
+            animation-name: reveal;
+            animation-duration: 0.4s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
             a {
                 color: #fff;
                 font-size: 20px;
@@ -84,6 +108,16 @@
                 background: #fff;
             }
         }
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                top: -50px;
+            }
+            100% {
+                opacity: 1;
+                top: 0;
+            }
+        }
     }
     .wrapper {
         display: flex;
@@ -102,18 +136,52 @@
                 padding-left: 50px;
                 padding-right: 50px;
             }
-            .description {
-                width: 100%;
-                color: #fff;
-                font-size: 32px;
-                line-height: 40px;
-                @include miniTablet {
-                    font-size: 24px;
-                    line-height: 30px;
+            span {
+                display: flex;
+                overflow: hidden;
+                justify-content: center;
+                padding-top: 3px;
+                padding: 0 auto;
+                .description {
+                    margin-bottom: 0;
+                    padding: 0 auto;
+                    width: 100%;
+                    color: #fff;
+                    font-size: 32px;
+                    line-height: 40px;
+                    animation-delay: 1s;
+                    position: relative;
+                    opacity: 0;
+                    bottom: -50px;
+                    animation-name: appear;
+                    animation-duration: 0.4s;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.5s;
+                    @include miniTablet {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                }
+                @keyframes appear {
+                    0% {
+                        opacity: 0;
+                        bottom: -50px;
+                    }
+                    100% {
+                        opacity: 1;
+                        bottom: 0;
+                    }
                 }
             }
             .projectInfo {
                 margin-top: 70px;
+                opacity: 0;
+                animation-name: appear;
+                animation-duration: 0.4s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                animation-delay: 0.2s;
                 .projectInfo_title {
                     p {
                         color: #fff;
@@ -125,13 +193,26 @@
                         }
                     }
                 }
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
                 .projectInfo_title::after {
                     content: '';
                     display: block;
-                    width: 100%;
+                    width: 0%;
                     height: 1px;
                     opacity: 0.4;
                     background: #fff;
+                    animation-name: lineReveal;
+                    animation-duration: 0.4s;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.7s;
                 }
                 .projectType {
                     div {
@@ -156,10 +237,15 @@
                 .projectType::after {
                     content: '';
                     display: block;
-                    width: 100%;
+                    width: 0%;
                     height: 1px;
                     opacity: 0.4;
                     background: #fff;
+                    animation-name: lineReveal;
+                    animation-duration: 0.4s;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.7s;
                 }
                 .projectYear {
                     div {
@@ -184,10 +270,23 @@
                 .projectYear::after {
                     content: '';
                     display: block;
-                    width: 100%;
+                    width: 0%;
                     height: 1px;
                     opacity: 0.4;
                     background: #fff;
+                    animation-name: lineReveal;
+                    animation-duration: 0.4s;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+                    animation-delay: 0.7s;
+                }
+            }
+            @keyframes lineReveal {
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 100%;
                 }
             }
         }
@@ -196,10 +295,16 @@
             justify-content: center;
             align-items: center;
             padding-right: 70px;
+            position: relative;
             .image {
                 width: 600px;
-                height: 400px;
+                height: 0px;
                 background-color: black;
+                animation-name: revealImage;
+                animation-duration: 0.4s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                animation-delay: 0.5s;
             }
             @include miniTablet {
                 padding-right: 0px;
@@ -208,6 +313,14 @@
         }
         @include miniTablet {
             flex-direction: column;
+        }
+        @keyframes revealImage {
+            0% {
+                height: 0px;
+            }
+            100% {
+                height: 400px;
+            }
         }
     }
 }
